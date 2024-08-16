@@ -1,0 +1,20 @@
+.Sidebar {
+  position: fixed;
+  top: 7.5%;
+  background-color: #e8f1fb;
+  height: 100%;
+  z-index: 3;
+  transition: transform 0.3s ease-out;
+}
+
+.Open {
+  transform: translateX(0);
+}
+.Close {
+  transform: translateX(-100%);
+}
+@media (min-width: 40rem) {
+  .Sidebar {
+    display: none;
+  }
+}

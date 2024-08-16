@@ -1,0 +1,82 @@
+.inventory {
+  width: 95%;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px 2px #aaaaaaaa;
+  margin: 0.5rem auto;
+  text-align: center;
+  font-size: x-small;
+}
+.inventoryHeadings {
+  display: grid;
+  grid-template-columns: 50px 100px 30px 50px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem;
+  column-gap: 5px;
+  font-size: x-small;
+  font-weight: bold;
+}
+.desktopOnly {
+  display: none;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+button:disabled,
+button:disabled:hover {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: white;
+}
+.inventoryList {
+  height: 500px;
+  overflow: auto;
+}
+/* width */
+.inventoryList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.inventoryList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.inventoryList::-webkit-scrollbar-thumb {
+  background: #f1bc97;
+}
+
+/* Handle on hover */
+.inventoryList::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+@media (min-width: 640px) {
+  .inventoryHeadings {
+    grid-template-columns: 50px 100px 30px 50px 150px;
+    font-size: small;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .inventory {
+    font-size: small;
+  }
+}

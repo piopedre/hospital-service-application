@@ -1,0 +1,113 @@
+.container {
+  min-height: 600px;
+}
+.title {
+  font-size: x-small;
+}
+.productStructure {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  padding: 20px;
+  margin: 0.5rem auto;
+  font-size: small;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  background-color: #25447d;
+  color: white;
+  text-transform: uppercase;
+  place-items: center;
+}
+.inventoryStructure {
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  display: grid;
+  grid-template-columns: 70px 100px 30px 50px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 5px;
+  column-gap: 5px;
+  margin: 0.5rem 0;
+  font-size: x-small;
+  position: relative;
+  cursor: pointer;
+}
+.selectedInventory {
+  overflow: auto;
+  font-size: x-small;
+}
+
+.selectedInventory > div {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin: 0.5rem 0;
+  place-items: center;
+  font-size: x-small;
+  text-transform: uppercase;
+}
+
+.inventoryStructure div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.productItem {
+  background-color: #6c9cd4;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: x-small;
+}
+.productItem > div {
+  overflow: hidden;
+}
+.productItem:hover {
+  border: 1px solid #25447d;
+}
+.desktopOnly {
+  display: none;
+}
+.form {
+  position: relative;
+}
+.removeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border: none;
+  background-color: #ff1f75;
+  cursor: pointer;
+}
+.cancelStick {
+  display: block;
+  border: 1px solid white;
+  margin: 0.2rem 0;
+  width: 1rem;
+}
+.cancelStick:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.cancelStick:nth-child(2) {
+  transform: rotate(135deg);
+}
+@media (min-width: 640px) {
+  .inventoryStructure {
+    grid-template-columns: 70px 100px 30px 50px 150px;
+  }
+  .productStructure {
+    grid-template-columns: 1fr 100px 200px 100px;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .productItem {
+    padding: 15px;
+  }
+  .title,
+  .selectedInventory,
+  .productItem,
+  .inventoryStructure,
+  .selectedInventory > div {
+    font-size: small;
+  }
+}

@@ -1,0 +1,212 @@
+.requistion {
+  overflow: auto;
+  position: relative;
+}
+.requistion > div:nth-child(1) {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+.searchRenderContainer {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  background-color: #e8f1fba2;
+  z-index: 2;
+}
+.searchRenderContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.searchRenderContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.searchRenderContainer::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+.renderStructure {
+  display: grid;
+  grid-template-columns: auto 50px 60px 60px;
+  color: white;
+  align-items: center;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  place-items: center;
+}
+.requistionStructure {
+  display: grid;
+  grid-template-columns: auto 60px 70px 70px 30px;
+  color: white;
+  align-items: center;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.searchRenderHeadings {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #25447d;
+  font-size: x-small;
+}
+.searchRenderItem {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: x-small;
+  /* margin: 0.2rem 0; */
+  background-color: #d6a68d;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.searchRenderItem > div {
+  overflow: hidden;
+}
+.searchRenderItem:hover {
+  border: 1px solid #6c9cd4;
+}
+.searchRenderList {
+  overflow: auto;
+}
+.searchRenderList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.searchRenderList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.searchRenderList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+.requistionHeadings {
+  padding: 20px 2px;
+  font-weight: bold;
+  background-color: #25447d;
+  font-size: x-small;
+  /* margin: 0.2rem; */
+}
+.requistionItem {
+  background-color: #6c9cd4;
+  font-size: x-small;
+  font-weight: bold;
+  /* margin: 0.2rem; */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px 6px;
+  border: 1px solid transparent;
+}
+.requistionItem input {
+  font-size: x-small;
+}
+.requistionItem:hover {
+  border: 1px solid #25447d;
+}
+.cancelStick {
+  display: block;
+  border: 1px solid #ff1f75;
+  margin: 0.2rem auto;
+  width: 1rem;
+}
+.cancelBtn {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancelBtn:hover,
+.cancelBtn:active {
+  background-color: white;
+  color: #ff1f75;
+}
+.deleteBtn {
+  height: 1rem;
+}
+.cancelStick:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.cancelStick:nth-child(2) {
+  transform: rotate(135deg);
+}
+.desktopOnly {
+  display: none;
+}
+.interaction {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #02a523;
+  color: white;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.requistionInformation {
+  display: grid;
+  grid-template-columns: auto 100px;
+  justify-items: end;
+  margin: 0.2rem 0;
+}
+.requistionList {
+  height: 400px;
+  overflow: auto;
+}
+.requistionList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.requistionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.requistionList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.requistionList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+
+.send {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.send:hover,
+.send:active {
+  color: #25447d;
+  background-color: white;
+}
+
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .searchRenderItem {
+    font-size: small;
+  }
+  .renderStructure {
+    grid-template-columns: auto 100px 100px 100px 150px;
+  }
+  .requistionStructure {
+    grid-template-columns: auto 100px 100px 100px 150px 50px;
+  }
+  .requistionInformation {
+    grid-template-columns: auto 200px;
+  }
+  .searchRenderItem,
+  .requistionHeadings,
+  .searchRenderHeadings,
+  .requistionItem,
+  .interaction,
+  .requistionItem input {
+    font-size: small;
+  }
+}

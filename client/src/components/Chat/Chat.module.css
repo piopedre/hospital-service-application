@@ -1,0 +1,39 @@
+.chatComponent {
+  display: grid;
+  grid-template-columns: 100px auto 30px;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.chatComponent:hover,
+.chatComponent:active {
+  cursor: pointer;
+  border: 1px solid #25447d;
+}
+
+.notification {
+  padding: 0.5rem;
+  height: 100%;
+}
+.user {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+  margin: 0.5rem 0;
+}
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem;
+}
+.latestMessage {
+  font-size: 9.5px;
+  text-align: left;
+}
+.notify {
+  display: grid;
+  grid-template-rows: 25px 25px;
+  justify-items: center;
+}

@@ -1,0 +1,63 @@
+.container {
+  min-height: 600px;
+  font-size: x-small;
+}
+
+.errorComponent {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 250px;
+  margin: 2rem auto;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+
+.errorTitle {
+  height: 40%;
+  border-bottom: 1px solid #febf04;
+  margin: 0.5rem 2rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.title {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: large;
+  letter-spacing: 0.1em;
+  color: #febf04;
+  text-transform: uppercase;
+}
+.description {
+  height: 40%;
+  border: 1rem;
+  margin: 0 2rem;
+  color: #febf04;
+  text-align: left;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #febf04;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #cd9a03;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    font-size: small;
+  }
+  .errorComponent {
+    width: 500px;
+    height: 250px;
+  }
+  .description {
+    letter-spacing: 0.2em;
+  }
+}

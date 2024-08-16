@@ -1,0 +1,221 @@
+.container {
+  min-height: 600px;
+}
+.mainContainer {
+  position: relative;
+}
+.inputContainer {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0.5rem;
+}
+.title,
+.inputContainer input,
+.inputContainer select,
+.inputContainer label {
+  font-size: x-small;
+}
+/* .inputContainer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* ADD SUPPLIER FORM */
+.addSupplierForm div {
+  display: grid;
+  justify-items: center;
+}
+/* Search Render */
+.searchRenderContainer {
+  position: absolute;
+  width: 100%;
+  top: 12%;
+  z-index: 2;
+}
+.searchList {
+  height: 200px;
+  background-color: #f1f1f1e8;
+  overflow: auto;
+}
+.searchItem {
+  background-color: #f1bc97;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  align-items: center;
+  font-size: x-small;
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+.searchHeadings {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  padding: 20px 15px;
+  margin: 0.5rem auto;
+  font-size: x-small;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  background-color: #25447d;
+  color: white;
+  text-transform: uppercase;
+  place-items: center;
+}
+.desktopOnly {
+  display: none;
+}
+.receiveStructure {
+  display: grid;
+  grid-template-columns: auto 50px 50px 80px;
+  column-gap: 10px;
+  margin: 0.4rem 0;
+  color: white;
+  align-items: center;
+}
+.receiveStructure input {
+  font-size: x-small;
+}
+.receiveHeadings {
+  background-color: #25447d;
+  padding: 20px 5px;
+  font-weight: bolder;
+  font-size: x-small;
+}
+.receivedItemsList {
+  height: 450px;
+  overflow: auto;
+}
+.receivedItem {
+  background-color: #6c9cd4;
+  padding: 15px 10px;
+  margin: 0.2rem;
+  font-size: x-small;
+  font-weight: bold;
+}
+.otherProps {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 105px;
+  align-items: center;
+  color: white;
+  column-gap: 10px;
+  justify-items: start;
+  box-shadow: 2px 2px 2px 2px #5880ad;
+  padding: 10px;
+  font-size: x-small;
+}
+.otherProps > div {
+  overflow: hidden;
+}
+.otherProps input {
+  font-size: x-small;
+  text-transform: uppercase;
+}
+.receivedItem input {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+.interactionBar {
+  background-color: #02a523;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  padding: 1.5rem;
+  font-size: x-small;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 100px;
+  margin: 1rem 0.5rem;
+  justify-items: end;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+.addModal {
+  font-size: x-small;
+  text-transform: uppercase;
+}
+.removeBtn {
+  cursor: pointer;
+  color: #ff1f75;
+  font-weight: bold;
+  font-size: medium;
+}
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .inputContainer {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-around;
+  }
+  .searchItem {
+    font-size: small;
+    grid-template-columns: 1fr 100px 200px 100px;
+  }
+  .searchHeadings {
+    font-size: small;
+    grid-template-columns: 1fr 100px 200px 100px;
+  }
+  .receiveStructure {
+    grid-template-columns: auto 100px 200px 100px;
+  }
+  .receiveStructure input {
+    font-size: small;
+  }
+  .otherProps {
+    grid-template-columns: auto 150px 250px 20px;
+    justify-items: center;
+    font-size: small;
+  }
+  .otherProps input {
+    font-size: small;
+  }
+  .receiveHeadings {
+    font-size: small;
+  }
+  .addModal,
+  .title,
+  .receivedItem,
+  .interactionBar,
+  .inputContainer input,
+  .inputContainer select,
+  .inputContainer label {
+    font-size: small;
+  }
+}

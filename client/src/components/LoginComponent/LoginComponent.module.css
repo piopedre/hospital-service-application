@@ -1,0 +1,90 @@
+.container {
+  min-height: 600px;
+}
+.loginForm {
+  max-width: 600px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  backdrop-filter: blur(20px);
+  min-height: 500px;
+}
+.loginForm input,
+.loginForm select,
+.loginForm label {
+  font-size: x-small;
+  background-color: inherit;
+}
+
+.clinicUnit {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.clinicUnit > div,
+.location > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.clinicUnit label,
+.location label,
+.singleUnit label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.loginForm input[type="text"]:nth-child(1) {
+  text-transform: uppercase;
+}
+.loginForm input,
+.loginForm select {
+  border: 1px solid transparent;
+  font-weight: bold;
+  background-color: inherit;
+  color: black;
+}
+
+.login {
+  font-size: small;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem auto;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  width: 40%;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .clinicUnit {
+    grid-template-columns: auto auto;
+  }
+  .singleUnit {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .login {
+    font-size: medium;
+  }
+  .loginForm {
+    width: 90%;
+  }
+  .loginForm input,
+  .loginForm select {
+    font-size: small;
+  }
+  .clinicUnit label,
+  .singleUnit label,
+  .location label {
+    font-size: small;
+  }
+}

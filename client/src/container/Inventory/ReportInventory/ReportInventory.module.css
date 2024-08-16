@@ -1,0 +1,47 @@
+.filter {
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+.reportCtn {
+  position: relative;
+  min-height: 600px;
+}
+.filterForm {
+  position: absolute;
+  top: 1%;
+  right: 17%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+
+.filterForm label {
+  font-size: small;
+  font-weight: bold;
+}
+.filterForm input {
+  font-size: x-small;
+  background-color: inherit;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+
+@media (min-width: 40rem) {
+  .filterForm {
+    width: 300px;
+    right: 8%;
+  }
+  .filterForm input {
+    font-size: small;
+  }
+}

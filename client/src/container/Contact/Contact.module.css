@@ -1,0 +1,98 @@
+.container {
+  min-height: 600px;
+  background-image: linear-gradient(#e8f1fbbf, #eaf3fa84),
+    url("../../assets/coverPage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+.title {
+  margin: 2rem 0;
+  font-size: xx-large;
+  color: #25447d;
+  font-weight: bold;
+}
+.contactContainer {
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header {
+  letter-spacing: 0.15em;
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 19px;
+}
+
+.emailInformation {
+  width: 80%;
+  margin: 1rem auto;
+}
+input {
+  all: unset;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  margin: 1rem;
+  width: 60%;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.confirm {
+  color: #25447d;
+}
+.confirm:hover {
+  background-color: #25447d;
+  color: white;
+}
+.subTitle {
+  margin: 2rem 0;
+  font-size: large;
+  color: #25447d;
+  font-weight: bold;
+}
+.information {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+.contactUs {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+}
+.contactUs a {
+  text-decoration: none;
+  color: #25447d;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+.contactForm {
+  width: 95%;
+  margin: 1rem auto;
+}
+.form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+@media (min-width: 40rem) {
+  .contactContainer {
+    width: 80%;
+  }
+  .contactUs {
+    flex-direction: row;
+  }
+}

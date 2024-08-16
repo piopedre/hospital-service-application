@@ -1,0 +1,41 @@
+.container {
+  min-height: 600px;
+}
+.mainCtn {
+  background-color: white;
+  position: relative;
+  margin: 0.2rem;
+}
+
+.reorderForm {
+  width: 300px;
+  font-size: small;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  right: 5.5%;
+  padding: 10px;
+  background-color: #f1f1f1f1;
+  border-radius: 10px;
+}
+.filter {
+  position: absolute;
+  right: 0;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.emptyReorderLevel {
+  background-color: #effaff;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+}

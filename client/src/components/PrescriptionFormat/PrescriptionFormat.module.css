@@ -1,0 +1,29 @@
+.prescriptionFormat > div {
+  display: grid;
+  justify-items: center;
+  font-size: small;
+}
+.title {
+  font-size: smaller;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+
+.prescriptionFormat select {
+  font-size: x-small;
+  background-color: inherit;
+}
+
+@media (min-width: 40rem) {
+  .prescriptionFormat select {
+    font-size: small;
+  }
+}

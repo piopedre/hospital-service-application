@@ -1,0 +1,56 @@
+{
+  "short_name": "Fnph App",
+  "name": " Fnph Hospital Service Application",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo24.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "logo64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "Screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Fnph Application Prescription Validation Page"
+    },
+    {
+      "src": "Screenshot1.png",
+      "sizes": "640x320",
+      "type": "image/gif",
+      "form_factor": "narrow",
+      "label": "Fnph Application Logout Page"
+    }
+  ]
+}

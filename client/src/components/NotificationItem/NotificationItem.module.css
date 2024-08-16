@@ -1,0 +1,100 @@
+.notificationItem {
+  padding: 5px;
+  /* height: 70px; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  font-size: xx-small;
+}
+.redirect {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media not all and (hover: none) {
+  .redirect:hover {
+    text-decoration: underline;
+    color: #25447d;
+  }
+}
+
+.imgElement {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1rem;
+  border: 1px solid #25447d;
+  padding: 5px;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.notificationInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.details {
+  height: 50%;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: xx-small;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timeStamp {
+  height: 50%;
+  font-size: x-small;
+  letter-spacing: 0.2em;
+  color: gray;
+}
+.circle {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 0.5rem;
+}
+.markAsRead button {
+  font-size: xx-small;
+  padding: 10px;
+  letter-spacing: 0.3em;
+}
+.markAsRead {
+  margin-left: auto;
+}
+.marked {
+  background-color: #25447d;
+  color: white;
+}
+.unMarked {
+  color: #25447d;
+  background-color: white;
+}
+.desktopOnly {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .details {
+    width: 100%;
+  }
+  .imgElement {
+    width: 3rem;
+    height: 3rem;
+    padding: 10px;
+  }
+}

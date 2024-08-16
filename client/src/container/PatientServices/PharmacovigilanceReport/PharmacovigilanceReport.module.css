@@ -1,0 +1,120 @@
+.ctn {
+  min-height: 600px;
+  overflow: auto;
+  padding: 1rem;
+  font-size: x-small;
+  position: relative;
+}
+.month {
+  text-align: left;
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #25447d;
+  margin: 1rem 0;
+}
+.empty {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.filterCtn {
+  text-align: right;
+  margin: 0.5rem;
+}
+.filterForm {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #aaaaaaaa;
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  font-weight: bold;
+  z-index: 2;
+}
+.filterForm input {
+  font-size: x-small;
+}
+.filterForm div label {
+  font-size: smaller;
+}
+.filterForm div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.filterForm span {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: smaller;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem auto;
+  display: block;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.desktopOnly {
+  display: none;
+}
+.structure {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  padding: 10px;
+  margin: 1rem;
+  align-items: center;
+  border: 1px solid #aaaaaaaa;
+}
+.headings {
+  font-weight: bold;
+  background-color: #f1f1f1;
+}
+.item {
+  background-color: white;
+  font-size: x-small;
+  border: 1px solid #aaaaaaaa;
+  font-weight: bolder;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.item:hover {
+  border: 1px solid #25447d;
+}
+.closeBtn {
+  background-color: #ff1f75;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .structure {
+    display: grid;
+    grid-template-columns: 150px auto 150px 250px;
+  }
+  .filterForm {
+    width: 400px;
+    right: 10%;
+  }
+  .filterForm span {
+    font-size: small;
+  }
+  .ctn {
+    font-size: small;
+  }
+}

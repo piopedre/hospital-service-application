@@ -1,0 +1,71 @@
+.addedUsers {
+  height: 50px;
+  overflow: auto;
+  margin: 0.5rem 0;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.addedUser {
+  display: inline-block;
+  background-color: #02a523;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: small;
+  color: white;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.addedUser:hover,
+.addedUser:active {
+  background-color: #ff1f75;
+}
+.userSearchRender {
+  height: 100px;
+  overflow: auto;
+}
+.userSearchRender::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.userSearchRender::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.userSearchRender::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.userSearchRender::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.notification {
+  font-size: small;
+  font-weight: bold;
+}
+.searchedUser {
+  display: grid;
+  grid-template-columns: 100px auto;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0.5rem;
+  background-color: #ffffff;
+  font-size: small;
+  cursor: pointer;
+}
+.searchedUser:hover,
+.searchedUser:active {
+  background-color: #25447d;
+  color: white;
+}

@@ -1,0 +1,73 @@
+.productVisualization {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  min-height: 600px;
+  background-color: #ffffff98;
+  position: relative;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem auto;
+  display: block;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.filter {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.salesForm {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  z-index: 1;
+}
+.salesForm input,
+.salesForm select {
+  font-size: x-small;
+}
+.salesForm div {
+  display: grid;
+  justify-items: center;
+  cursor: pointer;
+}
+.salesForm label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.formProps {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: transparent;
+}

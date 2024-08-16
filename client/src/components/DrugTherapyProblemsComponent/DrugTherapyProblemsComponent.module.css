@@ -1,0 +1,50 @@
+.drugTherapy label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.drugTherapy input,
+.drugTherapy select,
+.drugTherapy textarea {
+  font-size: x-small;
+  background-color: inherit;
+}
+.drugTherapy h3 {
+  font-size: x-small;
+}
+.drugTherapy > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.drugTherapy textarea {
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.drugTherapy textarea:focus {
+  border: 1px solid #25447d;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .drugTherapy > div {
+    grid-template-columns: 150px auto;
+    align-items: center;
+  }
+  .drugTherapy h3 {
+    font-size: small;
+  }
+  .drugTherapy input,
+  .drugTherapy select,
+  .drugTherapy textarea {
+    font-size: small;
+  }
+}

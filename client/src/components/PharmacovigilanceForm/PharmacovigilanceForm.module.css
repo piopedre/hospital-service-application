@@ -1,0 +1,241 @@
+.pharmacovigilanceForm {
+  width: 90%;
+  margin: 1rem auto;
+  background-color: #fffeff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: x-small;
+}
+.pharmacovigilanceForm input,
+.adrDescription textarea,
+.patientSection textarea {
+  font-size: x-small;
+  font-weight: bolder;
+}
+.sectionTitle {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  cursor: pointer;
+  font-size: x-small;
+}
+.sectionTitle div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+.sectionTitle div:nth-child(2) {
+  border: none;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.patientSectionBody {
+  padding: 10px;
+}
+.patientSection {
+  display: grid;
+  grid-template-columns: auto;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-out;
+}
+.patientSection div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  margin: 0.5rem 0;
+}
+.patientSection label,
+.adrSection label,
+.outcomeReaction label,
+.adrSecondSection label,
+.drugSecondSection label,
+.sourceReport label {
+  font-size: x-small;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.patientSection input:focus {
+  border: 1px solid #25447d;
+}
+
+.sectionProps label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.sectionProps div {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+}
+.sectionProps input:focus {
+  border: 1px solid #25447d;
+}
+.adrSection {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  column-gap: 10px;
+}
+.adrDescription {
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 1fr 180px;
+}
+.reactionDescription {
+  height: 200px;
+}
+.reactionDescription textarea {
+  width: 100%;
+  height: 150px;
+}
+.adrSectionComp div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.outcomeTitle {
+  font-size: smaller;
+  text-transform: uppercase;
+}
+.potentialOutcomes {
+  padding: 10px;
+}
+.potentialOutcomes span {
+  font-size: x-small;
+}
+.outcomeReaction div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.outcomeReaction span {
+  font-size: x-small;
+  margin: 0 0.5rem;
+}
+.patientHospitalInfo {
+  display: grid;
+  grid-template-columns: auto 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.patientHospitalInfo div {
+  margin: 0px;
+  padding: 0px;
+  box-shadow: none;
+}
+.adrSecondSection {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hospitalCheckBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+/* Drug Section */
+.drugSecondSection {
+  display: grid;
+  column-gap: 5px;
+}
+.drugSecondSection div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.sourceReport {
+  display: grid;
+  grid-template-columns: auto;
+}
+.sourceReport > div {
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 10px;
+  align-items: center;
+}
+#contact {
+  display: grid;
+  grid-template-columns: auto;
+}
+#contact div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.concomitantHeadings {
+  display: grid;
+  grid-template-columns: auto 100px 100px 100px 100px 100px 20px;
+  font-size: x-small;
+  font-weight: bold;
+  padding: 10px;
+  align-items: center;
+  overflow: scroll;
+  column-gap: 2px;
+}
+.concomitantHeadings input {
+  outline: none;
+  padding: 10px;
+  font-size: x-small;
+}
+.removeMedicine span {
+  display: block;
+  border: 2px solid #bd0000;
+  cursor: pointer;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .patientSection {
+    grid-template-columns: auto auto;
+  }
+  .sectionProps div {
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
+
+  .drugSecondSection {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .sourceReport > div {
+    grid-template-columns: 250px auto;
+  }
+  #contact {
+    grid-template-columns: auto auto auto;
+  }
+  #contact div {
+    grid-template-columns: auto;
+    column-gap: 10px;
+    align-items: center;
+  }
+  .concomitantHeadings {
+    grid-template-columns: auto 150px 150px 150px 150px 150px 20px;
+  }
+}

@@ -1,0 +1,67 @@
+.editContainer {
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.closeBtn {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+  position: absolute;
+  right: 0;
+}
+.clearError {
+  background-color: #f1f1f1;
+  width: 90%;
+  margin: auto;
+  font-size: x-small;
+  max-width: 620px;
+}
+.modalMessage {
+  text-transform: uppercase;
+  font-size: x-small;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem auto;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+.signError {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px 2px #cccccccc;
+}
+button:disabled {
+  background-color: #ccc;
+  color: gray;
+}
+button:disabled:hover {
+  background-color: #ccc;
+  color: gray;
+}
+
+@media (min-width: 40rem) {
+  .clearError,
+  .modalMessage {
+    font-size: small;
+  }
+}

@@ -1,0 +1,124 @@
+.salesStructure {
+  display: grid;
+  grid-template-columns: 70px 100px auto;
+  align-items: center;
+}
+.salesHeadings {
+  font-weight: bold;
+  padding: 10px 5px;
+  margin: 10px;
+  font-size: x-small;
+  margin-bottom: 3rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+.item {
+  padding: 1.25rem 0.5rem;
+  margin: 0 0.5rem;
+  font-size: x-small;
+  border: 1px solid transparent;
+  background-color: #eff6fe;
+  font-variant: small-caps;
+}
+.deficit {
+  color: red;
+}
+.empty {
+  padding: 40px;
+  text-transform: uppercase;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: x-small;
+}
+.item:nth-child(even) {
+  background-color: white;
+}
+.item:hover {
+  border: 1px solid #1d458a;
+}
+.salesItemList {
+  height: 400px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.salesItemList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.salesItemList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.salesItemList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.salesItemList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.props {
+  display: grid;
+  row-gap: 10px;
+}
+.paid {
+  color: white;
+  background-color: #24f65c;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+}
+.receipt {
+  color: white;
+  background-color: #ffa461;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.desktopOnly {
+  display: none;
+}
+@media (min-width: 23.75rem) {
+  .salesStructure {
+    grid-template-columns: 70px 100px auto;
+  }
+}
+@media (min-width: 30rem) {
+  .salesStructure {
+    grid-template-columns: 150px 150px auto;
+  }
+}
+@media (min-width: 40rem) {
+  .salesHeadings {
+    font-size: small;
+  }
+  .desktopOnly {
+    display: grid;
+  }
+  .salesStructure {
+    grid-template-columns: 150px 150px 150px auto;
+  }
+  .item,
+  .empty {
+    font-size: small;
+  }
+}
+@media (min-width: 50rem) {
+  .salesStructure {
+    grid-template-columns: 200px 180px 150px auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .salesStructure {
+    grid-template-columns: 300px 300px 250px auto;
+  }
+}

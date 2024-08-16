@@ -1,0 +1,52 @@
+.container {
+  min-height: 600px;
+  font-size: x-small;
+}
+.departmentLogin {
+  text-decoration: none;
+  color: #25447d;
+}
+.departmentLogin:hover {
+  color: #16284b;
+  text-decoration: underline;
+}
+.loginForm {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  width: 70%;
+  margin: 1rem auto;
+  min-height: 300px;
+}
+.error {
+  border: 1px solid #c41a1a;
+}
+input {
+  border: 1px solid transparent;
+}
+.loginForm input:focus {
+  border: 1px solid #25447d;
+}
+.formTitle {
+  font-style: italic;
+  color: #25447d;
+}
+
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .container {
+    font-size: small;
+  }
+  .loginForm {
+    max-width: 500px;
+  }
+}

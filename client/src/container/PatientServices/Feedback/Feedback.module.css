@@ -1,0 +1,61 @@
+.container {
+  min-height: 600px;
+}
+.feedback {
+  /* background-color: white; */
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  border: 1px solid rgba(165, 202, 253, 0.18);
+  box-shadow: 0 8px 32px 0 #25447d53;
+  font-weight: bold;
+  margin: 0.5rem;
+  min-height: 500px;
+  font-size: x-small;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.feedback h4 {
+  text-transform: uppercase;
+  color: #25447d;
+}
+.feedback input {
+  font-size: x-small;
+  background-color: inherit;
+}
+.feedback textarea {
+  min-height: 250px;
+  background-color: inherit;
+  font-size: x-small;
+}
+.feedback div label {
+  font-size: x-small;
+}
+.feedback div {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 10px;
+  justify-items: start;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .feedback input,
+  .feedback textarea,
+  .feedback label,
+  .feedback h4 {
+    font-size: small;
+  }
+  .feedback {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,35 @@
+.logout {
+  height: 450px;
+  width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: white;
+  border-radius: 10px;
+  font-size: small;
+}
+.success {
+  color: #51c878;
+  font-weight: bold;
+}
+.warning {
+  color: #c41a1a;
+  font-weight: bold;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .logout {
+    width: 400px;
+    font-size: medium;
+  }
+}

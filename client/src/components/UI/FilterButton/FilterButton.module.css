@@ -1,0 +1,22 @@
+.filter {
+  border: 1px solid #aaaaaaaa;
+  margin: 0.5rem;
+  text-align: left;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px #aaaaaaaa;
+  position: relative;
+}
+.filterItem {
+  display: block;
+  margin: 0.2rem auto;
+  border: 0.5px solid #000;
+}
+.filter span:nth-child(1) {
+  width: 20px;
+}
+.filter span:nth-child(2) {
+  width: 15px;
+}
+.filter span:nth-child(3) {
+  width: 10px;
+}

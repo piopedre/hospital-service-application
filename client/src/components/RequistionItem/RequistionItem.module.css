@@ -1,0 +1,134 @@
+.mainContainer {
+  min-height: 600px;
+  position: relative;
+}
+.requistion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  border: 1px solid transparent;
+  background-color: #25447d;
+  color: white;
+  font-size: x-small;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  font-size: x-small;
+}
+.label {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  color: white;
+  background-color: rgb(252, 4, 4);
+  right: 10%;
+  top: 15%;
+  width: 100px;
+  text-align: center;
+  transform: translateX(50%) translateY(-100%);
+}
+.addRequistion {
+  margin-bottom: 3rem;
+}
+.onGoing {
+  background-color: #f9a260;
+}
+.requistion:hover,
+.requistion:active {
+  border: 1px solid #f1f1f1;
+}
+.emptyRequistion {
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+}
+.requistionLocation {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin: 1rem 0;
+  align-items: center;
+  padding: 5px;
+}
+
+.requistionInformation {
+  display: grid;
+  grid-template-columns: 100px 100px auto;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 5px;
+}
+.requistionList {
+  height: 400px;
+  padding: 1rem;
+  overflow: auto;
+  font-size: x-small;
+  margin-top: 5rem;
+  position: relative;
+}
+.addRequistion {
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm {
+  background-color: white;
+  color: #25447d;
+  z-index: 2;
+  position: relative;
+}
+
+.requistionList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.requistionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.requistionList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.requistionList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+/* ADD REQUSITION BUTTON */
+
+@media (min-width: 40rem) {
+  .requistionLocation {
+    display: grid;
+    grid-template-columns: 200px auto;
+  }
+
+  .requistionInformation {
+    display: grid;
+    grid-template-columns: 200px 200px auto;
+  }
+  .emptyRequistion {
+    font-size: small;
+  }
+  .requistion,
+  .requistionList,
+  .title {
+    font-size: small;
+  }
+  /* .label {
+    transform: rotate(40deg) translateX(99px) translateY(-86.5px);
+  } */
+}

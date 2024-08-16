@@ -1,0 +1,8 @@
+.closeBtn {
+  background-color: #ff1f75;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}

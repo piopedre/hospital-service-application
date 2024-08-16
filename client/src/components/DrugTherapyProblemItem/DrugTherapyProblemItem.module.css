@@ -1,0 +1,37 @@
+.container {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #00000029;
+  display: grid;
+  grid-template-columns: 50px 150px auto;
+  font-size: small;
+  align-items: center;
+  border-radius: 5px;
+  font-size: x-small;
+}
+
+.desktopOnly {
+  display: none;
+}
+.container:hover,
+.container:active {
+  border: 1px solid #325ba8;
+}
+
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .container {
+    grid-template-columns: 100px 200px 200px auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    grid-template-columns: 200px 250px 250px auto;
+    font-size: small;
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+  min-height: 600px;
+}
+.form {
+  width: auto;
+  padding: 0.5rem;
+  position: absolute;
+  font-weight: bold;
+  font-size: x-small;
+  background-color: white;
+  right: 20%;
+  top: 29%;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+
+.form label {
+  font-size: x-small;
+}
+.form select {
+  background-color: inherit;
+  font-size: x-small;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .form label,
+  .form select {
+    font-size: small;
+  }
+  .form {
+    width: 350px;
+    padding: 1rem;
+    right: 6%;
+  }
+}

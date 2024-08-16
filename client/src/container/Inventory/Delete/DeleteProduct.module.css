@@ -1,0 +1,118 @@
+.container {
+  min-height: 600px;
+}
+.deleteContainer {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+.productSearch {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+
+.deleteContainer > div:nth-child(1) input::placeholder {
+  text-transform: uppercase;
+}
+.desktopOnly {
+  display: none;
+}
+.deleteStructure {
+  display: grid;
+  grid-template-columns: auto 90px 60px 50px;
+  padding: 15px;
+  margin: 0.5rem auto;
+  font-size: x-small;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  background-color: #25447d;
+  color: white;
+  text-transform: uppercase;
+  place-items: center;
+}
+.productItem {
+  background-color: #6c9cd4;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: x-small;
+  cursor: pointer;
+}
+.productItem > div {
+  overflow: hidden;
+}
+.interaction {
+  text-transform: uppercase;
+  font-size: x-small;
+  color: #ff3f3f;
+  font-weight: bold;
+}
+
+.button {
+  background-color: white;
+  margin: 1rem;
+  font-size: x-small;
+}
+.button:hover {
+  color: white;
+}
+.reject {
+  color: #ff1f75;
+}
+.reject:hover {
+  background-color: #ff1f75;
+}
+.confirm {
+  color: #25447d;
+}
+.confirm:hover {
+  background-color: #25447d;
+}
+.removeBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ff1f75;
+  font-weight: bold;
+  font-size: medium;
+}
+.deleteProducts {
+  overflow: auto;
+  height: 350px;
+}
+
+/* width */
+.deleteProducts::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.deleteProducts::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.deleteProducts::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.deleteProducts::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .deleteStructure {
+    grid-template-columns: auto 150px 150px 100px 70px;
+    font-size: small;
+  }
+  .button {
+    font-size: small;
+  }
+  .interaction {
+    font-size: small;
+  }
+}

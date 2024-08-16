@@ -1,0 +1,77 @@
+.searchRenderContainer {
+  position: absolute;
+  width: 100%;
+  background-color: #e8f1fba2;
+  z-index: 2;
+  top: 7%;
+}
+.renderStructure {
+  display: grid;
+  grid-template-columns: auto 50px 60px 60px;
+  color: white;
+  align-items: center;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  place-items: center;
+}
+.searchRenderList {
+  overflow: auto;
+  height: 300px;
+}
+/* width */
+.searchRenderList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.searchRenderList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.searchRenderList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.searchRenderList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.searchRenderHeadings {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #25447d;
+  font-size: x-small;
+}
+.searchRenderItem {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: x-small;
+  background-color: #d6a68d;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.searchRenderItem > div {
+  overflow: hidden;
+}
+.searchRenderItem:hover {
+  border: 1px solid #6c9cd4;
+}
+.desktopOnly {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .renderStructure {
+    grid-template-columns: auto 100px 100px 100px 150px;
+  }
+  .searchRenderHeadings {
+    font-size: small;
+  }
+  .searchRenderItem {
+    font-size: small;
+  }
+}

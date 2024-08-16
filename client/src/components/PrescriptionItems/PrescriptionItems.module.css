@@ -1,0 +1,9 @@
+.prescriptionInput {
+  font-size: x-small;
+}
+
+@media (min-width: 40rem) {
+  .prescriptionInput {
+    font-size: small;
+  }
+}

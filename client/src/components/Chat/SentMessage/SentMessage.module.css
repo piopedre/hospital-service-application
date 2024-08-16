@@ -1,0 +1,54 @@
+.message {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 13px;
+  background-color: #f1f1f1;
+  width: 50%;
+  color: white;
+  max-width: 400px;
+}
+.dateNotification {
+  font-size: small;
+  border-radius: 10px;
+  width: 40%;
+  margin: 1rem auto;
+  background-color: #f1bc97;
+  color: white;
+  padding: 0.5rem;
+}
+.messageUser {
+  font-size: xx-small;
+  padding: 2px;
+}
+.messageContent {
+  padding: 0.2rem;
+  border-radius: 10px;
+  margin: 0.1rem 0;
+  letter-spacing: 1.2px;
+  font-size: smaller;
+}
+.date {
+  margin: 0.2rem;
+  display: inline-block;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sender {
+  text-align: right;
+  background-color: #25447d;
+  border-radius: 15px 15px 2px 15px;
+}
+
+.receiver {
+  text-align: left;
+  background-color: #02a523;
+  border-radius: 15px 15px 15px 2px;
+}
+@media (min-width: 40rem) {
+  .message {
+    width: 30%;
+  }
+}

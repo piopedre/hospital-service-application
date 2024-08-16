@@ -1,0 +1,175 @@
+.searchContainer {
+  position: relative;
+}
+
+.searchInput div {
+  width: 85%;
+  margin: 1rem auto;
+}
+.searchInput input:focus {
+  border: 1px solid #25447d;
+}
+.searchRenderStructure {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  background-color: #f1bc97;
+  padding: 10px;
+  font-size: x-small;
+  font-weight: bold;
+}
+.searchedProducts {
+  height: 200px;
+  overflow: auto;
+}
+.searchedProducts > div {
+  overflow: hidden;
+}
+.searchedProducts::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.searchedProducts::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.searchedProducts::-webkit-scrollbar-thumb {
+  background: #c6aa96;
+}
+
+/* Handle on hover */
+.searchedProducts::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+.searchItem {
+  font-size: x-small;
+  font-weight: lighter;
+  background-color: aliceblue;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 0.5rem auto;
+}
+.searchRenderContainer {
+  width: 100%;
+  background-color: rgba(236, 247, 255, 0.887);
+  padding: 10px;
+  position: absolute;
+  top: 55px;
+}
+.searchItem:hover {
+  border: 1px solid #f1bc97;
+}
+
+/* PRODUCTS */
+.productStructure {
+  display: grid;
+  grid-template-columns: auto 65px 90px 45px;
+  align-items: center;
+  padding: 10px;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+}
+.productHeadings {
+  background-color: #25447d;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+.productItem {
+  font-size: x-small;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.productItem input {
+  font-size: x-small;
+}
+.productItem:hover,
+.productItem:active {
+  border: 1px solid #25447d;
+}
+.productList {
+  height: 300px;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+.productList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.productList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.productList::-webkit-scrollbar-thumb {
+  background: #3e5379;
+}
+
+/* Handle on hover */
+.productList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.desktopOnly {
+  display: none;
+}
+.interaction {
+  display: grid;
+  grid-template-columns: auto 100px;
+  justify-items: end;
+  padding: 20px;
+  margin: 1rem;
+  font-size: x-small;
+  font-weight: bolder;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: white;
+  cursor: pointer;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: transparent;
+}
+@media (min-width: 40rem) {
+  .searchRenderStructure,
+  .productStructure {
+    grid-template-columns: auto 150px 150px 100px 50px;
+    font-size: small;
+  }
+  .interaction {
+    grid-template-columns: auto 200px;
+  }
+  .searchItem {
+    font-size: small;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .productItem,
+  .productItem input {
+    font-size: small;
+  }
+
+  .interaction {
+    font-size: small;
+  }
+}

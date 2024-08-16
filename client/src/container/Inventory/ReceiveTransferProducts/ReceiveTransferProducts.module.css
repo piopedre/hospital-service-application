@@ -1,0 +1,12 @@
+.title {
+  font-size: x-small;
+}
+.container {
+  min-height: 600px;
+  position: relative;
+}
+@media (min-width: 40rem) {
+  .title {
+    font-size: small;
+  }
+}

@@ -1,0 +1,45 @@
+.Loader_Container {
+  width: 100%;
+  position: fixed;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.Loader {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #d53e2a;
+  margin: 0;
+  animation: load 1.5s linear infinite;
+}
+@keyframes load {
+  0% {
+    margin: 0rem;
+    background-color: #d728b0;
+  }
+  20% {
+    margin: 0 0.2rem;
+    background-color: #7327d8;
+  }
+  50% {
+    margin: 0 0.4rem;
+    background-color: #2482db;
+  }
+  70% {
+    margin: 0 0.6rem;
+    background-color: #1ee192;
+  }
+  90% {
+    margin: 0 0.8rem;
+    background-color: #64df20;
+  }
+  100% {
+    margin: 0 1rem;
+    background-color: #e1ca1e;
+  }
+}

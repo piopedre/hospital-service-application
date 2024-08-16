@@ -1,0 +1,54 @@
+.Input_Container {
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: unset;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  position: relative;
+}
+.Input_Container label {
+  font-size: x-small;
+}
+.Input_Container input,
+.Input_Container select,
+.Input_Container textarea {
+  padding: 0.6rem;
+  width: 100%;
+  outline: none;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+  font-size: x-small;
+  background-color: inherit;
+}
+.Input_Container input:hover,
+.Input_Container input:active,
+.Input_Container select:hover,
+.Input_Container select:active,
+.Input_Container textarea:hover,
+.Input_Container select:active {
+  border: 1px solid #25447d;
+}
+select > option {
+  font-weight: bold;
+}
+.Error {
+  border: 1px solid #c41a1a;
+}
+
+@media (min-width: 40rem) {
+  .Input_Container {
+    border-radius: 5px;
+    background-color: unset;
+  }
+  .Input_Container input,
+  .Input_Container select,
+  .Input_Container textarea {
+    outline: none;
+    letter-spacing: 2px;
+    padding: 1rem;
+    font-size: small;
+  }
+  .Input_Container label {
+    font-size: small;
+  }
+}

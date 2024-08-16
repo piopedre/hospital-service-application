@@ -1,0 +1,83 @@
+.Logo {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid #25447d;
+  height: 1.7rem;
+  width: 1.7rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Logo:active {
+  border: 1px solid #25447d;
+}
+.Logo img {
+  height: 100%;
+  width: 100%;
+}
+.Logo_Description {
+  display: none;
+}
+
+.notification {
+  position: absolute;
+  background-color: #f9a260;
+  font-size: x-small;
+  top: -70%;
+  right: 0;
+  padding: 2px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+@media (min-width: 40rem) {
+  .Logo {
+    margin: 0.5rem 1rem;
+  }
+}
+@media not all and (hover: none) {
+  .Logo:hover .Logo_Description {
+    display: block;
+    position: absolute;
+    padding: 2px;
+    left: 170%;
+    top: -25%;
+    font-size: x-small;
+    font-weight: bold;
+    z-index: 2;
+    background-color: #b1ccef;
+  }
+  .Logo:hover {
+    background-color: #b1ccef;
+  }
+}
+@media (min-width: 40rem) {
+  .Logo {
+    height: 2.1rem;
+    width: 2.1rem;
+    padding: 0.4rem;
+  }
+  @media not all and (hover: none) {
+    .Logo:hover .Logo_Description {
+      top: 120%;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: 85.4rem) {
+  .Logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+  .notification {
+    right: -10%;
+    top: -50%;
+  }
+}

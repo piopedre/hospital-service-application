@@ -1,0 +1,291 @@
+.patientContainer {
+  position: relative;
+}
+.previewSearch {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prescriptionPreview {
+  /* background-color: #eef7fc; */
+  backdrop-filter: blur(20px);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.prescriptionSearchRender {
+  background-color: #eef7fc;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 36%;
+  right: 0;
+  height: 200px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  margin: auto;
+}
+.searchRenderList {
+  height: 150px;
+  overflow: auto;
+}
+.searchRenderStructure {
+  display: grid;
+  grid-template-columns: 150px auto;
+  padding: 10px;
+}
+.heading {
+  font-weight: bold;
+  font-size: x-small;
+}
+.searchRenderItem {
+  font-size: x-small;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+  color: #25447d;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0.2px solid transparent;
+}
+.searchRenderItem:hover,
+.searchRenderItem:active {
+  border: 0.2px solid #6393ec;
+}
+.detailsContainer {
+  margin: 0.5rem;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: aliceblue;
+  font-size: x-small;
+}
+.detailsContainer h4 {
+  text-transform: uppercase;
+}
+.details {
+  display: grid;
+  grid-template-columns: 150px auto;
+  margin: 1rem 0;
+  column-gap: 10px;
+  place-items: center;
+  justify-content: space-between;
+  justify-items: start;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.productContainer {
+  border: 1px solid #ccc;
+  min-height: 300px;
+  padding: 10px;
+  margin: 1rem auto;
+  background-color: white;
+  font-size: x-small;
+}
+.productStructure {
+  display: grid;
+  grid-template-columns: auto 70px 100px;
+  place-items: center;
+  margin: 1rem 0;
+  padding: 7px;
+}
+.productHeadings {
+  font-weight: bold;
+  color: #25447d;
+}
+.productItem {
+  font-size: x-small;
+  margin: 0.5rem 0;
+  background-color: white;
+  font-weight: bold;
+}
+.productTotal {
+  text-align: right;
+  font-size: x-small;
+  font-weight: bold;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: end;
+}
+.receiptContainer {
+  margin: 1rem 0;
+  font-size: x-small;
+}
+.receiptContainer div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+.receiptContainer label {
+  font-size: x-small;
+}
+.receiptContainer input {
+  font-size: x-small;
+  background-color: inherit;
+}
+.receiptContainer input:focus {
+  border: 1px solid #25447d;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+
+.addPatient div {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.addPatient label {
+  font-size: 13.5px;
+  font-weight: bold;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.submitPrescription {
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.submitPrescription label {
+  font-weight: bold;
+}
+.submitPrescription > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+.collector {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+.collector label,
+.receiptContainer label {
+  font-weight: bold;
+}
+.collector div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+.collector input {
+  border: 1px solid transparent;
+}
+.collector input:focus {
+  border: 1px solid #25447d;
+}
+
+/* .cancelStick {
+  display: block;
+  border: 1px solid #ff1f75;
+  margin: 0.2rem auto;
+  width: 1rem;
+}
+.deleteBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+}
+.cancelStick:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.cancelStick:nth-child(2) {
+  transform: rotate(135deg);
+} */
+.interaction {
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.5rem;
+  background-color: white;
+}
+.interactionItem {
+  color: #25447d;
+  font-size: small;
+  font-weight: bold;
+  width: 80%;
+  margin: 0.5rem auto;
+  text-align: left;
+}
+@media (min-width: 40rem) {
+  .detailsContainer {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  .heading {
+    font-size: small;
+  }
+  .details {
+    grid-template-columns: 200px auto;
+    font-size: x-small;
+  }
+  .productContainer {
+    width: 80%;
+    font-size: small;
+  }
+  .productItem,
+  .productTotal,
+  .detailsContainer {
+    font-size: small;
+  }
+  .productStructure {
+    grid-template-columns: auto 100px 200px;
+  }
+  .receiptContainer div {
+    width: 80%;
+    margin: 0.5rem auto;
+    grid-template-columns: 200px auto;
+  }
+  .submitPrescription {
+    width: 80%;
+  }
+  .submitPrescription > div {
+    grid-template-columns: auto auto;
+  }
+  .searchRenderStructure {
+    grid-template-columns: auto 200px;
+  }
+  .addPatient div {
+    grid-template-columns: 120px auto;
+  }
+  .collector div {
+    grid-template-columns: 200px auto;
+  }
+  .searchRenderItem {
+    font-size: small;
+  }
+  .prescriptionPreview {
+    margin: 1rem;
+  }
+}

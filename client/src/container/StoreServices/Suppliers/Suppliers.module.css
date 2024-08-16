@@ -1,0 +1,104 @@
+.container {
+  min-height: 600px;
+  font-size: x-small;
+  letter-spacing: 0.1em;
+}
+.suppliers {
+  min-height: 500px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  margin: 1rem;
+  overflow: auto;
+  border-radius: 10px;
+}
+.supplierItem {
+  display: grid;
+  grid-template-columns: 20px auto 70px 70px 50px;
+  align-items: center;
+  place-items: center;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+.editImage {
+  height: 20px;
+  width: 20px;
+}
+.edit {
+  height: 100%;
+  width: 100%;
+}
+.removeBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ff1f75;
+  font-weight: bold;
+  font-size: medium;
+}
+.supplierForm {
+  font-size: x-small;
+}
+.supplierForm input {
+  letter-spacing: 0.2em;
+}
+.supplierForm label {
+  display: block;
+  text-align: left;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem 0;
+  letter-spacing: 0.2em;
+}
+.deleteModal {
+  text-transform: uppercase;
+  font-size: x-small;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+button:disabled {
+  color: gray;
+  background-color: #ccc;
+}
+button:disabled:hover {
+  color: gray;
+  background-color: #ccc;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .container {
+    font-size: small;
+  }
+  .supplierItem {
+    grid-template-columns: 50px auto 250px 100px 100px;
+  }
+  .supplierItem:hover {
+    border: 1px solid #25447d;
+  }
+  .supplierForm {
+    font-size: small;
+  }
+  .deleteModal {
+    font-size: small;
+  }
+}

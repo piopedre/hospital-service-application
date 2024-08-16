@@ -1,0 +1,64 @@
+.container {
+  background-color: #f7f7f7;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  margin: 1rem;
+  font-size: x-small;
+}
+.heading h4 {
+  padding: 10px;
+  margin: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: x-small;
+}
+
+.dtpContainer {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: x-small;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.dtpComponent {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin: 0.5rem 0;
+  align-items: center;
+  text-align: left;
+}
+.dtpComponent:hover {
+  color: #f1bc97;
+}
+.dtp,
+.dtp:hover {
+  color: #25447d;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 2px #aaaaaaaa;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+
+@media (min-width: 40rem) {
+  .dtpComponent {
+    grid-template-columns: 450px auto;
+    font-size: small;
+  }
+  .heading h4 {
+    font-size: small;
+  }
+  .container {
+    font-size: small;
+  }
+}

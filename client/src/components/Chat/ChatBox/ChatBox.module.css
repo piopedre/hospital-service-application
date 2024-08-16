@@ -1,0 +1,119 @@
+.chats {
+  display: none;
+}
+.chatContainer {
+  margin-top: 1rem;
+  overflow: auto;
+  height: 370px;
+  position: relative;
+}
+.chatHeading {
+  font-size: large;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+  text-align: left;
+}
+.convoCtn {
+  padding: 0.5rem;
+}
+.convoHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.backBtn {
+  font-weight: bolder;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.profileImage {
+  width: 2rem;
+  height: 2rem;
+}
+
+.messageCtn {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 10px;
+  padding: 0.5rem;
+}
+.messages {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  overflow: auto;
+}
+/* width */
+.messages::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.messages::-webkit-scrollbar-thumb {
+  background: #ffc79f;
+}
+
+/* Handle on hover */
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+.dateNotification {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f1bc97;
+  font-size: 10px;
+  font-weight: bolder;
+  width: 50%;
+  padding: 5px;
+  margin: 0.5rem auto;
+  color: white;
+}
+.sendMessage {
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 0.2px solid #ffffff;
+  border-radius: 2px;
+}
+.input:focus {
+  border: 0.2px solid #25447d;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .chats {
+    display: block;
+    width: 65%;
+    box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+    background-color: #f1f1f1;
+    margin: 0.2rem;
+  }
+}

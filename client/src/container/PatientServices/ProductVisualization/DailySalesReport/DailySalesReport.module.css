@@ -1,0 +1,71 @@
+.dailySalesReport {
+  min-height: 600px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  position: relative;
+  background-color: #ffffff76;
+}
+.filterCtn {
+  padding: 10px;
+}
+.filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.salesForm {
+  max-width: 400px;
+  margin: 1rem auto;
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  z-index: 1;
+}
+.salesForm input,
+.salesForm select {
+  font-size: x-small;
+}
+.formProps {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.salesForm div {
+  display: grid;
+  justify-items: center;
+  cursor: pointer;
+}
+.salesForm label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: transparent;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .salesForm input,
+  .salesForm select {
+    font-size: small;
+  }
+}

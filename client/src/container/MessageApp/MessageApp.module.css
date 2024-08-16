@@ -1,0 +1,257 @@
+.container {
+  min-height: 600px;
+}
+.messageApp {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  min-width: 290px;
+  width: 100%;
+}
+.notification {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.notificationCtn {
+  position: relative;
+}
+.notificationELement {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.notificationImage {
+  height: 100%;
+  width: 100%;
+}
+
+.notificationList {
+  background-color: white;
+  height: 200px;
+  width: 350px;
+  overflow: auto;
+  position: absolute;
+  right: 5%;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  z-index: 2;
+  padding: 0.5rem;
+}
+.notificationItem {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+}
+.notificationItem:hover {
+  border: 1px solid #25447d;
+}
+.notificationList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.notificationList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.notificationList::-webkit-scrollbar-thumb {
+  background: #ffc79f;
+}
+
+/* Handle on hover */
+.notificationList::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+.searchInput {
+  width: 90%;
+}
+.searchInput div {
+  width: 90%;
+  margin: auto;
+}
+.searchInput input {
+  border: 1px solid grey;
+}
+.searchInput input:focus {
+  border: 0.2px solid #25447d;
+}
+.searchedChats {
+  height: 400px;
+  overflow: auto;
+}
+.searchedChat {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.searchedChat:hover,
+.searchedChat:active {
+  background-color: #25447d;
+  color: white;
+  cursor: pointer;
+}
+.searchedChat img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+.users {
+  width: 95%;
+  min-width: 310px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.chats {
+  display: none;
+}
+.chatContainer {
+  margin-top: 1rem;
+  overflow: auto;
+  height: 370px;
+}
+/* scrollbar*/
+/* width */
+.chatContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.chatContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.chatContainer::-webkit-scrollbar-thumb {
+  background: #ffc79f;
+}
+
+/* Handle on hover */
+.chatContainer::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+.chatHeading {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+  text-align: left;
+}
+.convoCtn {
+  padding: 0.5rem;
+}
+.convoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.backBtn {
+  font-weight: bolder;
+}
+.profileImage {
+  width: 2rem;
+  height: 2rem;
+}
+
+.messageCtn {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 10px;
+  padding: 0.5rem;
+}
+.messages {
+  height: 360px;
+  background-color: white;
+  padding: 1rem;
+  overflow: auto;
+}
+.sendMessage {
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 0.2px solid #ffffff;
+  border-radius: 2px;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.goBack {
+  font-size: larger;
+  font-weight: bolder;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  border: 1px solid transparent;
+}
+.goBack:hover,
+.goBack:active {
+  border: 1px solid #f1bc97;
+}
+.addChatBtn {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 5px;
+  right: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.addUserSearch {
+  display: flex;
+  align-items: center;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.chatMinCtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .messageApp {
+    justify-content: center;
+  }
+  .users {
+    width: 35%;
+    margin: 0.2rem;
+  }
+
+  .chats {
+    display: block;
+    width: 65%;
+    height: 500px;
+    box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+    background-color: #f1f1f1;
+    margin: 0.5rem;
+  }
+}

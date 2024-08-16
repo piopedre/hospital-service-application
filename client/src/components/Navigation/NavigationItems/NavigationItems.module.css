@@ -1,0 +1,17 @@
+.NavigationBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .NavigationBar {
+    display: flex;
+    flex-direction: row;
+    background-color: #e8f1fb;
+    margin: 0 1rem;
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  min-height: 600px;
+}
+.componentLinks {
+  padding: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
+  display: flex;
+  justify-items: center;
+  font-size: x-small;
+  font-weight: bold;
+  background-color: white;
+  color: #25447d;
+}
+.componentLink {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 40rem) {
+  .componentLinks {
+    font-size: small;
+  }
+}

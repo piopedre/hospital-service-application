@@ -1,0 +1,22 @@
+.container {
+  min-height: 600px;
+  background-image: linear-gradient(
+    310deg,
+    hsl(209deg 88% 90%) 0%,
+    hsl(208deg 79% 91%) 9%,
+    hsl(207deg 70% 91%) 18%,
+    hsl(207deg 60% 91%) 27%,
+    hsl(193deg 58% 91%) 36%,
+    hsl(151deg 64% 88%) 45%,
+    hsl(110deg 70% 85%) 55%,
+    hsl(68deg 77% 83%) 64%,
+    hsl(55deg 80% 82%) 73%,
+    hsl(55deg 80% 82%) 82%,
+    hsl(55deg 80% 82%) 91%,
+    hsl(55deg 80% 82%) 100%
+  );
+  backdrop-filter: blur(15px);
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #cccccc;
+  border-radius: 10px;
+}

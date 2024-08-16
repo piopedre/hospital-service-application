@@ -1,0 +1,165 @@
+.previewContainer {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #ffffff8b;
+  border: 1px solid #ccc;
+  font-size: x-small;
+}
+.salesInformation {
+  margin: 1rem auto;
+  border-radius: 2px;
+  max-width: 70%;
+}
+.salesInformation > div {
+  display: grid;
+  grid-template-columns: 70px auto;
+  padding: 10px;
+  letter-spacing: 0.1em;
+}
+.title {
+  font-weight: bold;
+  font-size: x-small;
+}
+.previewHeadings {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  padding: 10px;
+  margin: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: x-small;
+}
+.previewControl {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+}
+.goBack {
+  font-size: large;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ff1f75;
+  color: white;
+}
+.deleteInformation {
+  text-transform: uppercase;
+  font-size: small;
+  /* color: #ff1f1f; */
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: transparent;
+}
+
+.list {
+  margin: 0.5rem;
+  height: 350px;
+  overflow: auto;
+}
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.list::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.addReceipt {
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.addReceipt div {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+}
+.addReceipt input {
+  border: 1px solid transparent;
+}
+.previewItem {
+  font-size: x-small;
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  align-items: center;
+  padding: 10px;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.interactionBar {
+  background-color: #24f65c;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  font-size: x-small;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 100px;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  justify-items: end;
+}
+.desktopOnly {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .previewContainer {
+    font-size: small;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .previewItem,
+  .previewHeadings {
+    grid-template-columns: auto 150px 150px 150px;
+    font-size: small;
+  }
+  .previewItem {
+    padding: 15px;
+  }
+  .addReceipt div {
+    grid-template-columns: 200px auto;
+    align-items: center;
+    justify-items: center;
+  }
+  .title,
+  .interactionBar {
+    font-size: small;
+  }
+  .salesInformation > div {
+    grid-template-columns: 200px auto;
+  }
+}

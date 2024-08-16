@@ -1,0 +1,45 @@
+.Footer {
+  background-color: #163562;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  min-height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: x-small;
+}
+
+.Footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: x-small;
+}
+.Footer a:hover {
+  color: white;
+}
+.Footer_Information {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.Footer_Information div {
+  margin: 0.5rem;
+}
+.Footer_Information a {
+  font-size: x-small;
+}
+.studio {
+  font-style: italic;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+@media (min-width: 40rem) {
+  .Footer {
+    font-size: small;
+  }
+  .Footer_Information a,
+  .Footer a {
+    font-size: small;
+  }
+}

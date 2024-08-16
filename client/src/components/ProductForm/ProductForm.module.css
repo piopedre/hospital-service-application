@@ -1,0 +1,214 @@
+.productForm {
+  padding: 1rem;
+  display: grid;
+  row-gap: 0.2rem;
+  background-color: #fffeff;
+  /* border: 0.2px solid #ccc; */
+  margin: 0.5rem auto;
+  min-height: 800px;
+  max-width: 850px;
+  border: 1px solid rgba(165, 202, 253, 0.502);
+  box-shadow: 0 8px 32px 0 #25447d53;
+}
+.productForm h3 {
+  font-weight: bolder;
+  color: #25447d;
+  text-transform: uppercase;
+  font-size: small;
+}
+.minCtn {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 15px;
+}
+#searchModal {
+  all: unset;
+  height: 150px;
+  position: absolute;
+  top: 100%;
+  right: -2%;
+  width: 99%;
+  padding: 10px;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 2px 2px 2px #aaaaaa;
+  border-radius: 10px;
+  overflow: auto;
+}
+#searchModal::-webkit-scrollbar {
+  width: 15px;
+  cursor: pointer;
+}
+
+/* Track */
+#searchModal::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+/* Handle */
+.searchModal::-webkit-scrollbar-thumb {
+  background: #25447d;
+}
+.searchModal::-webkit-scrollbar-thumb:hover {
+  background: #101d36;
+}
+
+.productItem {
+  margin: 0.2rem;
+  font-size: x-small;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+.productItem:active {
+  border: 1px solid #25447d;
+}
+.productForm > div > div > div {
+  display: grid;
+  grid-template-columns: auto;
+}
+.productForm > div > div > .productCategory {
+  display: block;
+}
+.productForm > div > .productCategory > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.productCategory > div {
+  display: grid;
+  grid-template-columns: auto;
+}
+.productForm input {
+  border: 0.2px solid #ccc;
+  padding: 1rem;
+}
+.productForm select {
+  border: 0.2px solid #ccc;
+  padding: 1rem;
+}
+.productForm input::placeholder {
+  font-size: small;
+  text-transform: lowercase;
+}
+.productForm input:focus,
+.Modal_Product_Category input:focus {
+  border: 1px solid #25447d;
+}
+.productForm label {
+  display: inline-block;
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.product,
+.productInformation,
+.price {
+  padding: 10px;
+  margin: 0.2rem 0;
+  box-shadow: 0 2px 2px 2px #46464658;
+}
+.product span,
+.productInformation span,
+.price span {
+  font-size: smaller;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+}
+.submitForm > button {
+  margin: 1rem 0;
+  border: 1px solid transparent;
+  background-color: #25447d;
+  color: white;
+  box-shadow: 2px 2px 5px #aaaaaaaa;
+}
+.submitForm > button:hover,
+.submitForm > button:active {
+  background-color: white;
+  color: #25447d;
+}
+#productId button {
+  background-color: #25447d;
+  color: white;
+}
+#productId button:hover,
+#productId button:active {
+  color: #25447d;
+  background-color: white;
+  box-shadow: 2px 2px 5px #32323298;
+}
+
+@media (min-width: 660px) {
+  .productForm h3 {
+    color: #25447d;
+    text-transform: uppercase;
+    font-size: medium;
+  }
+  .productItem {
+    margin: 0.2rem;
+    font-size: small;
+    padding: 10px;
+  }
+  .productItem:hover {
+    border: 1px solid #25447d;
+  }
+  #searchModal {
+    top: 100%;
+    right: 0%;
+    width: calc(97% - 200px);
+    padding: 10px;
+    z-index: 2;
+  }
+  .product > div {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 1rem;
+  }
+  .productItem {
+    margin: 0.2rem;
+  }
+  .productForm > div > div > div {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+  }
+  .productCategory > div {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+  }
+  #productId {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px 2px #aaaaaa;
+    padding: 5px;
+  }
+
+  #productId button {
+    margin: 0 1rem;
+  }
+}
+/* Product Category */
+.modalProductCategory {
+  font-size: small;
+}
+.modalProductCategory h4 {
+  text-transform: uppercase;
+}
+
+.modalProductCategory input {
+  width: 100%;
+}
+
+.modalProductCategory button {
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  color: #25447d;
+}
+.modalProductCategory button:hover,
+.modalProductCategory button:active {
+  background-color: #25447d;
+  color: white;
+}

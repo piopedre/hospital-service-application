@@ -1,0 +1,21 @@
+.Pharmacy_Site {
+  padding: 10px;
+  background-color: #f1bc97;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: x-small;
+}
+.desktopOnly {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .Pharmacy_Site {
+    font-size: small;
+  }
+}

@@ -1,0 +1,22 @@
+.filterIcon {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #25447d;
+  color: #f1f1f1;
+  font-size: x-small;
+}
+.filterIcon:hover,
+.filterIcon:active {
+  background-color: #ff1f75;
+}
+.removeIcon {
+  font-weight: bolder;
+  margin-right: 0.2rem;
+}
+.filterIcon div {
+  display: inline-block;
+}

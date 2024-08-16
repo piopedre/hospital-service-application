@@ -1,0 +1,42 @@
+.container {
+  min-height: 600px;
+  background-image: linear-gradient(#e8f1fbbf, #eaf3fa84),
+    url("../../assets/coverPage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.aboutContainer {
+  height: 30%;
+  padding: 15px;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.headerCtn {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #f9a260;
+  text-transform: uppercase;
+}
+
+.bodyCtn {
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+.title {
+  margin: 2rem 0;
+  font-size: xx-large;
+  color: #25447d;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+}

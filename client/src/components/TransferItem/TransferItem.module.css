@@ -1,0 +1,85 @@
+.transferCtn {
+  height: 500px;
+}
+.addTransfer {
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm {
+  background-color: white;
+  color: #25447d;
+}
+.confirm:hover,
+.confirm:active {
+  color: white;
+  background-color: #25447d;
+}
+.transferList {
+  height: 300px;
+  overflow: auto;
+}
+
+.transferList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.transferList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.transferList::-webkit-scrollbar-thumb {
+  background: #f7d7bf;
+}
+
+/* Handle on hover */
+.transferList::-webkit-scrollbar-thumb:hover {
+  background: #f1bc97;
+}
+
+.transferItem {
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f1bc97;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-align: left;
+}
+.transferItem:hover,
+.transferItem:active {
+  border: 1px solid #181818aa;
+}
+.transferProps {
+  display: grid;
+  grid-template-columns: auto 100px;
+  margin: 1rem;
+  justify-items: start;
+}
+.emptyTransfer {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  width: 90%;
+  height: 100px;
+  margin: 1rem auto;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+}
+
+@media (min-width: 40rem) {
+  .emptyTransfer,
+  .transferItem {
+    font-size: small;
+  }
+}

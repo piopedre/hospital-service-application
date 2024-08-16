@@ -1,0 +1,52 @@
+/* Filter Report */
+.filterReport {
+  width: 300px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.filterReport label {
+  font-size: small;
+  font-weight: bold;
+}
+.filterReport div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.filterReport h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}

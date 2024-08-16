@@ -1,0 +1,171 @@
+.storeCtn {
+  background-color: #ffffff87;
+  position: relative;
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+  font-size: x-small;
+  min-height: 600px;
+}
+
+.requistionForm {
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 0.5rem;
+  position: absolute;
+  right: 15%;
+  top: 0;
+  z-index: 2;
+}
+.requistionForm input {
+  font-size: x-small;
+  background-color: inherit;
+}
+.requistionForm div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+.requistionForm label {
+  font-size: smaller;
+  font-weight: bold;
+}
+.reportHeadings {
+  padding: 20px;
+  color: #25447d;
+  font-weight: bold;
+}
+.filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.requistionList {
+  height: 400px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.requistionList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.requistionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.requistionList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.requistionList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+
+.requistionItem {
+  font-size: smaller;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  background-color: #bdd4ff;
+  border: 1px solid #ccc;
+}
+
+.requistionItem:nth-child(even) {
+  background-color: white;
+}
+.requistionItem:hover,
+.requistionItem:active {
+  border: 1px solid #25447d;
+}
+.structure {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  margin: 0.5rem 0;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.structure,
+.requistionProps,
+.reportHeadings {
+  justify-items: center;
+}
+.requistionProps {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  align-items: center;
+  padding: 5px 0;
+  margin: 0.2rem 0;
+  column-gap: 10px;
+}
+
+.interactionBar {
+  background-color: #02a523;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  padding: 1.5rem;
+  font-size: x-small;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 100px;
+  margin: 1rem 0.5rem;
+  justify-items: end;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+.emptyRequistion {
+  padding: 20px;
+  background-color: #25447d;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0.5rem;
+  font-size: x-small;
+}
+@media (min-width: 40rem) {
+  .structure,
+  .requistionProps {
+    grid-template-columns: 200px auto 200px;
+  }
+  .storeCtn,
+  .emptyRequistion {
+    font-size: small;
+  }
+  .requistionForm {
+    width: 350px;
+    right: 6%;
+  }
+}

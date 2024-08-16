@@ -1,0 +1,85 @@
+.container {
+  min-height: 600px;
+}
+
+h4,
+button {
+  font-size: x-small;
+}
+
+.renderContainer {
+  width: 100%;
+  padding: 10px;
+  height: 500px;
+  overflow: auto;
+}
+.productStructure {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  padding: 20px;
+  margin: 0.5rem auto;
+  font-size: smaller;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  background-color: #25447d;
+  color: white;
+  text-transform: uppercase;
+  place-items: center;
+}
+.productItem {
+  background-color: #6c9cd4;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: x-small;
+}
+.productItem > div {
+  overflow: hidden;
+}
+
+.productItem:hover {
+  border: 1px solid #25447d;
+}
+.desktopOnly {
+  display: none;
+}
+.form {
+  position: relative;
+}
+.removeBtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  border: none;
+  background-color: #ff1f75;
+  cursor: pointer;
+}
+.cancelStick {
+  display: block;
+  border: 1px solid white;
+  margin: 0.2rem 0;
+  width: 1rem;
+}
+.cancelStick:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.cancelStick:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+@media (min-width: 640px) {
+  .productStructure {
+    grid-template-columns: 1fr 100px 200px 100px;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .productItem {
+    padding: 15px;
+    font-size: 10.5px;
+  }
+  h4,
+  button {
+    font-size: small;
+  }
+}

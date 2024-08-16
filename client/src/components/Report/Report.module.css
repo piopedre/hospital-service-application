@@ -1,0 +1,51 @@
+.report {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: x-small;
+  font-weight: bold;
+}
+.report h3 {
+  font-weight: bolder;
+  word-spacing: 2px;
+}
+.unit {
+  text-transform: uppercase;
+}
+
+.minTitle {
+  text-align: left;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.reportStructure {
+  margin: 1rem;
+}
+.reportComp {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 50px;
+
+  justify-items: start;
+  font-size: x-small;
+}
+.reportComp div {
+  margin: 0.5rem;
+  font-size: x-small;
+  text-align: left;
+}
+@media (min-width: 40rem) {
+  .report {
+    font-size: small;
+  }
+  .reportComp {
+    grid-template-columns: auto 200px;
+    padding: 10px 20px;
+    row-gap: 30px;
+  }
+  .reportComp div {
+    font-size: small;
+    margin: 0.5rem 0;
+  }
+}

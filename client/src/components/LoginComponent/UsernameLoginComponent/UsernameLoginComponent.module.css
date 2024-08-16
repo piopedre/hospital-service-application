@@ -1,0 +1,55 @@
+.login {
+  font-style: italic;
+}
+.confirm {
+  width: 30%;
+  margin: auto;
+  background-color: #25447d;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.loginForm {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  padding: 1rem;
+  min-height: 400px;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 7px;
+  margin-bottom: 10rem;
+  backdrop-filter: blur(15px);
+}
+.loginForm > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.loginForm label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.loginForm input,
+.loginForm select {
+  background-color: inherit;
+  font-size: x-small;
+  border: 1px solid transparent;
+  color: black;
+}
+.loginForm input:focus {
+  border: 1px solid #25447d;
+}
+@media (min-width: 40rem) {
+  .loginForm input,
+  .loginForm select,
+  .loginForm label {
+    font-size: small;
+  }
+}

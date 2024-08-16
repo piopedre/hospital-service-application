@@ -1,0 +1,25 @@
+.MessageContainer {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  text-align: center;
+  z-index: 12;
+  transition: all 0.3s ease-out;
+}
+.Message {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-small;
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px 2px #0000006b;
+}
+@media (min-width: 40rem) {
+  .Message {
+    font-size: medium;
+    width: 50%;
+  }
+}

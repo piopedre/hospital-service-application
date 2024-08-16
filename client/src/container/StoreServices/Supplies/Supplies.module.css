@@ -1,0 +1,61 @@
+.suppliesReport {
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  position: relative;
+  background-color: #ffffff97;
+  min-height: 600px;
+}
+.title {
+  font-size: x-small;
+}
+.filter {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.filterForm {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: absolute;
+  top: 1%;
+  right: 15%;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+.filterForm input,
+.filterForm select {
+  font-size: x-small;
+  background-color: inherit;
+}
+.filterForm label {
+  font-weight: bold;
+  font-size: x-small;
+}
+.filterForm div {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+@media (min-width: 40rem) {
+  .title {
+    font-size: small;
+  }
+  .filterForm {
+    right: 5%;
+  }
+  .filterForm input,
+  .filterForm select,
+  .filterForm label {
+    font-size: small;
+  }
+}

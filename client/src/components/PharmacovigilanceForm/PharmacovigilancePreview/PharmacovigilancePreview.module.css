@@ -1,0 +1,115 @@
+.preview {
+  background-color: #eff396;
+  padding: 1rem;
+}
+.sectionTitle {
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid rgb(97, 97, 97);
+}
+.input {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 150px auto;
+  font-weight: bold;
+  background-color: inherit;
+  align-items: center;
+}
+.patientRecord {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+.birthSexWeight {
+  display: grid;
+  grid-template-columns: auto 0.3fr 0.3fr;
+}
+.inputOutcome {
+  display: grid;
+  grid-template-columns: 250px auto;
+  font-weight: bold;
+}
+.reactionTimeFrame {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  font-weight: bold;
+}
+
+.hospital {
+  grid-template-columns: 250px auto;
+}
+.input div,
+.reactionDate div,
+.inputOutcome div {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.adrSection {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}
+.description {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0.5rem 0;
+}
+.description label {
+  text-align: left;
+  font-weight: bold;
+}
+.description div,
+.input div {
+  padding: 10px;
+  background-color: inherit;
+  font-weight: bold;
+  text-align: left;
+}
+.reactionDate {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.potentialOutcomes div {
+  font-size: smaller;
+  text-align: left;
+}
+.adrSecondSection {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #aaaaaaaa;
+}
+.adrSecondSection div {
+  grid-template-columns: auto 100px;
+}
+.adrSecondSection div:nth-child(4) {
+  grid-template-columns: 250px auto;
+}
+.drugSecondSection {
+  display: grid;
+  grid-template-columns: auto 150px 200px 150px 150px;
+  border: 1px solid #aaaaaaaa;
+  padding: 10px;
+  margin: 0.5rem 0;
+}
+.drugSecondSection div {
+  background-color: inherit;
+}
+.concomitantMedicines {
+  display: grid;
+  grid-template-columns: auto 150px 150px 150px 150px 200px;
+  column-gap: 10px;
+  padding: 10px;
+  margin: 0.5rem 0;
+}
+.concomitantMedicines div {
+  background-color: inherit;
+}

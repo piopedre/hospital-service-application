@@ -1,0 +1,54 @@
+.container {
+  background-color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+}
+
+.initContainer {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  margin: 2rem auto;
+}
+.initContainer > div {
+  display: grid;
+  justify-items: center;
+}
+.initContainer input {
+  border: 1px solid grey;
+}
+.initContainer input:focus {
+  border: 1px solid #25447d;
+}
+.initContainer label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+
+@media (min-width: 40rem) {
+  .initContainer {
+    width: 85%;
+  }
+  .initContainer > div {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+  }
+  .initContainer label,
+  .container {
+    font-size: small;
+  }
+}

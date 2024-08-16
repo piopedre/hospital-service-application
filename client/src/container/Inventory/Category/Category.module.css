@@ -1,0 +1,131 @@
+.container {
+  min-height: 600px;
+}
+.categoryCtn {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 2px 2px 2px 2px #25447d48;
+  margin: 0.5rem;
+  padding: 10px;
+  font-size: x-small;
+  min-height: 500px;
+}
+.categoryList {
+  height: 300px;
+  overflow: auto;
+}
+.editForm {
+  font-size: x-small;
+}
+/* width */
+.categoryList::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.categoryList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.categoryList::-webkit-scrollbar-thumb {
+  background: #25447d;
+}
+
+/* Handle on hover */
+.categoryList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.categoryStructure {
+  display: grid;
+  grid-template-columns: 50px auto 50px 20px;
+  column-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  place-items: center;
+}
+.categoryHeadings {
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-weight: bold;
+}
+.deleteModal {
+  font-size: x-small;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.delete {
+  background-color: #ff1f75;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+.edit,
+.delete {
+  border: 1px solid transparent;
+}
+.editImage {
+  height: 15px;
+  width: 15px;
+}
+.categoryItem {
+  padding: 20px 10px;
+  box-shadow: 2px 2px 2px 2px #25447d2e;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+.button {
+  background-color: white;
+  margin: 1rem;
+  font-size: x-small;
+}
+button:disabled {
+  color: white;
+  background-color: grey;
+}
+button:disabled:hover {
+  color: white;
+  background-color: grey;
+}
+.button:hover {
+  color: white;
+}
+.reject {
+  color: #ff1f75;
+}
+.reject:hover {
+  background-color: #ff1f75;
+}
+.confirm {
+  color: #25447d;
+}
+.confirm:hover {
+  background-color: #25447d;
+  color: white;
+}
+
+@media (min-width: 40rem) {
+  .categoryCtn,
+  .deleteModal,
+  .button,
+  .editForm {
+    font-size: small;
+  }
+  .categoryList::-webkit-scrollbar {
+    width: 15px;
+  }
+  .editImage {
+    width: 20px;
+    height: 20px;
+  }
+  .delete {
+    width: 70%;
+    margin: auto;
+    font-size: small;
+  }
+  .categoryStructure {
+    grid-template-columns: 70px auto 100px 100px;
+  }
+}

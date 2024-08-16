@@ -1,0 +1,65 @@
+/* Group info */
+.groupInfo {
+  font-size: small;
+  /* display: block; */
+}
+
+.searchedUser {
+  display: grid;
+  grid-template-columns: 50px auto;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0.5rem;
+  background-color: #ffffff;
+  font-size: small;
+  cursor: pointer;
+}
+.searchedUser:hover,
+.searchedUser:active {
+  background-color: #25447d;
+  color: white;
+}
+.searchedList {
+  height: 150px;
+  overflow: auto;
+}
+.searchedList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.searchedList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.searchedList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.searchedList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 0.5rem;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}

@@ -1,0 +1,82 @@
+.osExpiryContainer {
+  position: relative;
+  min-height: 600px;
+}
+.osExpiryContainer h4 {
+  margin-bottom: 4rem;
+  font-size: x-small;
+}
+.form {
+  padding: 10px;
+  margin: 1rem auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 12%;
+  top: 1%;
+  z-index: 1;
+}
+.form input,
+.form select {
+  font-size: x-small;
+  background-color: inherit;
+}
+.form h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form label {
+  font-size: x-small;
+  font-weight: bold;
+}
+.form div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.filterBtnReport {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.filterBtnReport input {
+  font-size: x-small;
+  background-color: inherit;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.cancel {
+  background-color: #ff1f75;
+  color: white;
+  margin: 1rem;
+}
+.cancel:hover,
+.cancel:active {
+  color: #ff1f75;
+  background-color: white;
+}
+.graph {
+  height: 500px;
+  border: 1px solid #25447d;
+  margin: 10px;
+}
+@media (min-width: 40rem) {
+  .form {
+    width: 300px;
+  }
+  .form input,
+  .form select,
+  .form label,
+  .osExpiryContainer h4 {
+    font-size: small;
+  }
+}
+/* CONTINUE FROM HERE AT HOME */

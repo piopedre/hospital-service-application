@@ -1,0 +1,28 @@
+.chatMessage {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  top: 10%;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.messenger {
+  width: 70%;
+  background-color: white;
+  font-size: x-small;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #25447d;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+
+@media (min-width: 40rem) {
+  .messenger {
+    font-size: small;
+  }
+}

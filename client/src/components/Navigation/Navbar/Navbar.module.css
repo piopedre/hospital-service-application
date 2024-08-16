@@ -1,0 +1,18 @@
+.Navigation_Container {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8f1fb;
+  padding: 0 5px;
+  z-index: 3;
+  top: 0;
+}
+
+@media (max-width: 40rem) {
+  .Desktop_Only {
+    display: none;
+  }
+}

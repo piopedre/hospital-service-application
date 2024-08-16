@@ -1,0 +1,61 @@
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem;
+}
+
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.title {
+  font-size: x-small;
+}
+.outOfStockForm {
+  position: relative;
+}
+.renderContainer {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  top: 108px;
+  background-color: white;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+
+.renderContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.renderContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.renderContainer::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.renderContainer::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.renderItem {
+  font-size: small;
+  padding: 0.2rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.renderItem:hover,
+.renderItem:active {
+  border: 1px solid #25447d;
+}
+@media (min-width: 40rem) {
+  .title {
+    font-size: small;
+  }
+}

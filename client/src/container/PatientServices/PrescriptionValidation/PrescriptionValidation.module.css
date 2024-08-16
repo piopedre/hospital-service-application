@@ -1,0 +1,156 @@
+.prescriptionValidation {
+  position: relative;
+  min-height: 600px;
+}
+.productSearch {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+.prescriptionFormat > div {
+  display: grid;
+  justify-items: center;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+.hold {
+  background-color: #02a523;
+  color: white;
+  margin: 1rem 0;
+}
+.hold:hover,
+.hold:active {
+  color: #02a523;
+  background-color: white;
+}
+.prescription {
+  min-height: 500px;
+  overflow: auto;
+}
+.title {
+  border-bottom: 0.2px solid black;
+  padding-bottom: 10px;
+}
+
+.prescriptionList {
+  height: 350px;
+  overflow: auto;
+  /* background-color: white; */
+}
+/* width */
+.prescriptionList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.prescriptionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.prescriptionList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.prescriptionList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+.prescriptionHeadings {
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 0.2px solid black;
+  font-size: x-small;
+}
+.prescriptionItem {
+  font-size: x-small;
+  padding: 2px 0;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  background-color: #f1f1f1;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 150px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.productStructure {
+  display: grid;
+  grid-template-columns: auto 50px 50px 70px;
+  align-items: center;
+  column-gap: 5px;
+}
+.productInformation {
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  align-items: center;
+  column-gap: 10px;
+}
+.removeBtn {
+  background-color: #ff1f75;
+  color: white;
+  padding: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.removeBtn:hover,
+.removeBtn:active {
+  color: #ff1f75;
+  background-color: transparent;
+}
+/* Interaction Tab */
+.interaction {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #02a523;
+  color: white;
+  margin: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+}
+.interaction input {
+  font-size: x-small;
+}
+.requistionInformation {
+  display: grid;
+  grid-template-columns: auto 100px;
+  justify-items: end;
+  margin: 0.2rem 0;
+}
+@media (min-width: 40rem) {
+  .prescriptionItem {
+    padding: 10px 0;
+  }
+
+  .productStructure {
+    grid-template-columns: auto 100px 100px 200px;
+    column-gap: 15px;
+  }
+  .productInformation {
+    grid-template-columns: auto 150px 200px;
+    column-gap: 15px;
+  }
+  .prescriptionItem {
+    margin: 1rem 0.2rem;
+    font-size: small;
+  }
+  .prescriptionHeadings {
+    font-size: small;
+  }
+  .interaction,
+  .interaction input {
+    font-size: small;
+  }
+}

@@ -1,0 +1,115 @@
+.title {
+  font-size: x-small;
+  padding: 0.2rem;
+}
+.location {
+  font-size: x-small;
+  font-weight: bold;
+}
+.mainPreview {
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  margin: 0.1rem;
+  padding: 1rem;
+}
+.previewComponent {
+  display: grid;
+  grid-template-columns: auto 90px 80px;
+  place-items: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 10px;
+  font-size: x-small;
+}
+
+.desktopOnly {
+  display: none;
+}
+.previewHeading {
+  border-bottom: 0.2px solid grey;
+  font-weight: bold;
+}
+.removeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.cancelStick {
+  display: block;
+  border: 1px solid #ff1f75;
+  margin: 0.2rem auto;
+  width: 1rem;
+}
+.cancelStick:nth-child(1) {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.cancelStick:nth-child(2) {
+  transform: rotate(135deg);
+}
+.send {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.send:hover,
+.send:active {
+  color: #25447d;
+  background-color: #f1f1f1;
+}
+.previewRequistionList {
+  height: 230px;
+  overflow: auto;
+}
+/* width */
+.previewRequistionList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.previewRequistionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.previewRequistionList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.previewRequistionList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+
+.totalPrice {
+  height: 50px;
+  text-align: right;
+  font-weight: bold;
+}
+.interactionBar {
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  padding: 1rem;
+  font-size: x-small;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 100px;
+  margin: 1rem 0.5rem;
+  justify-items: end;
+}
+@media (min-width: 40rem) {
+  .desktopOnly {
+    display: block;
+  }
+  .previewComponent {
+    grid-template-columns: auto 150px 150px 150px;
+  }
+  .title,
+  .location,
+  .previewComponent,
+  .interactionBar {
+    font-size: small;
+  }
+}

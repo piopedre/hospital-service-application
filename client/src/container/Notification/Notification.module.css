@@ -1,0 +1,92 @@
+.notifyCtn {
+  backdrop-filter: blur(15px);
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  margin: 1rem;
+  padding: 1rem;
+  color: #25447d;
+}
+.header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+}
+.mainHeadings {
+  border-bottom: 1px solid #f1bc97;
+}
+.headings {
+  font-weight: bold;
+  font-size: x-small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allRead {
+  cursor: pointer;
+}
+.allRead:active {
+  color: #25447d;
+}
+.minHeadings {
+  display: grid;
+  grid-template-columns: 300px;
+  /* margin: 0.5rem; */
+  font-size: 9px;
+  cursor: pointer;
+}
+.notificationNavigators {
+  color: gray;
+}
+.notificationNumber {
+  display: inline-block;
+  color: white;
+  background-color: grey;
+  border-radius: 10px;
+  width: 30px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.active {
+  color: #25447d;
+  font-weight: bolder;
+  border-bottom: 2px solid #f1bc97;
+}
+/* .active  .notificationList {
+  background-color: #325ba8;
+} */
+.notificationList {
+  height: 550px;
+  overflow: auto;
+}
+.notificationList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.notificationList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.notificationList::-webkit-scrollbar-thumb {
+  background: #325ba8;
+}
+
+/* Handle on hover */
+.notificationList::-webkit-scrollbar-thumb:hover {
+  background: #25447d;
+}
+@media not all and (hover: none) {
+  .allRead:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 40rem) {
+  .headings {
+    font-size: small;
+  }
+  .minHeadings {
+    font-size: 11px;
+  }
+}

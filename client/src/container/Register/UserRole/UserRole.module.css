@@ -1,0 +1,35 @@
+.container {
+  min-height: 600px;
+}
+.userRoleForm {
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 2px 2px 2px 2px #aaaaaaaa;
+  font-size: x-small;
+}
+.userRoleForm > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+.userRoleForm label {
+  font-size: small;
+  font-weight: bold;
+}
+.confirm {
+  background-color: #25447d;
+  color: white;
+  margin: 1rem 0;
+}
+.confirm:hover,
+.confirm:active {
+  color: #25447d;
+  background-color: white;
+}
+@media (min-width: 40rem) {
+  .userRoleForm {
+    font-size: small;
+  }
+}
