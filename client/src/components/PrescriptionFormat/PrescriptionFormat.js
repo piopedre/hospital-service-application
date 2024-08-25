@@ -42,7 +42,7 @@ const prescriptionFormat = React.memo((props) => {
         }}
         inputType='select'
         title='PRICING TYPE'
-        options={["NORMAL", "NHIA", "NNPC", "FUCC", "COMMUNITY"]}
+        options={["NORMAL", "NHIA", "NYSC", "NNPC", "FUCC", "COMMUNITY"]}
         changed={(e) => {
           props.updatePrescriptionPrice(
             e.target.value,

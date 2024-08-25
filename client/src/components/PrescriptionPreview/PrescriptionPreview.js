@@ -424,7 +424,8 @@ const prescriptionPreview = React.memo((props) => {
       {props.format.serviceType === "OUT-PATIENT" &&
       props.format.pricingType !== "FUCC" &&
       props.format.serviceType === "OUT-PATIENT" &&
-      props.format.pricingType !== "NNPC" ? (
+      props.format.pricingType !== "NNPC" &&
+      props.format.pricingType !== "NYSC" ? (
         <form
           className={classes.receiptContainer}
           onSubmit={(e) => {

@@ -38,12 +38,23 @@ const removeLoader = () => {
     type: REMOVE_VALIDATION_LOADER,
   };
 };
-
+const updatePrescriptionOnHandQuantity = (database, prescription) => {
+  prescription.forEach((product) => {
+    const newProduct = database.find((pr) => pr._id === product.get("id"));
+    if (newProduct) {
+      if (newProduct.quantity !== product.get("onHandQuantity")) {
+        product.set("onHandQuantity", newProduct.quantity);
+      }
+    }
+  });
+};
 export const prescriptionValidation = (
   prescription,
   setPrescriptionPreview
 ) => {
-  return (dispatch) => {
+  return (dispatch, getState) => {
+    const newDatabase = getState().general.products.database;
+    updatePrescriptionOnHandQuantity(newDatabase, prescription);
     const { valid, quantity } = validatePrescription(prescription);
     if (!valid && !quantity) {
       dispatch(sendProductMessenger("No Product in prescription", true));
@@ -61,9 +72,7 @@ export const prescriptionValidation = (
         dispatch(resetProductMessenger());
       }, 2000);
     } else if (!valid) {
-      dispatch(
-        sendProductMessenger("A product quantity is not sufficient ", true)
-      );
+      dispatch(sendProductMessenger("A product quantity is  0 (ZER0) ", true));
       setTimeout(() => {
         dispatch(resetProductMessenger());
       }, 2000);

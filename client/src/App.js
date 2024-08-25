@@ -200,13 +200,6 @@ const Suppliers = lazy(() => {
   return import("./container/StoreServices/Suppliers/Suppliers");
 });
 
-// CLINICALS
-const PatientConsultation = lazy(() => {
-  return import(
-    "./container/Clinicals/PatientConsultation/PatientConsultation"
-  );
-});
-
 const ENDPOINT =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3001"
@@ -270,12 +263,6 @@ function App() {
       <Layout>
         <Suspense fallback={<Spinner />}>
           <Routes>
-            {/* CLINICALS */}
-            <Route
-              path='/app/patient-services'
-              element={<PatientConsultation socket={socket} />}
-            />
-
             {/* PHARMACY */}
             <Route
               path='/pharma-app/feedback'

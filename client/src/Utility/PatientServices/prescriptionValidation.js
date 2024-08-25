@@ -8,7 +8,15 @@ export const setPrescriptionFormat = (e, setFormat) => {
     };
   });
 };
-
+const getNyscPrice = (product) => {
+  const fgPrice = +product.fgPrice;
+  const sellingPrice = +product.sellingPrice;
+  if (fgPrice >= sellingPrice) {
+    return 0;
+  } else {
+    return sellingPrice - fgPrice;
+  }
+};
 export const validatePrescription = (prescription) => {
   if (!prescription.length) {
     return {
@@ -99,12 +107,15 @@ export const addPrescriptionItem = (
       const prescriptionItem = new Map();
       prescriptionItem.set("name", newProduct.name);
       prescriptionItem.set("quantity", 1);
+      const nyscPrice = getNyscPrice(newProduct);
       prescriptionItem.set(
         "price",
         pricing === "NHIA"
           ? newProduct.nhiaPrice
           : pricing === "NNPC"
           ? newProduct.nnpcPrice
+          : pricing === "NYSC"
+          ? nyscPrice
           : newProduct.sellingPrice
       );
       prescriptionItem.set(
@@ -119,12 +130,15 @@ export const addPrescriptionItem = (
       prescriptionItem.set("onHandQuantity", newProduct.quantity);
       prescriptionItem.set("packSize", newProduct.packSize);
       prescriptionItem.set("expiryDate", expiryDate);
+      prescriptionItem.set("fgPrice", newProduct.fgPrice);
       if (pricing === "NHIA") {
-        prescriptionItem.set("fgPrice", newProduct.fgPrice);
         prescriptionItem.set(
           "hmoPrice",
           +prescriptionItem.get("fgPrice") * 0.9
         );
+      }
+      if (pricing === "NYSC") {
+        prescriptionItem.set("hmoPrice", +prescriptionItem.get("fgPrice") * 1);
       }
       prescriptionItem.set("id", newProduct._id);
       const { length, totalPrice } = updateRequistionTabHandler([
@@ -152,12 +166,15 @@ export const updatePrescriptionPrice = (
       const selectedProduct = products.find(
         (pr) => pr._id === product.get("id")
       );
+      const nyscPrice = getNyscPrice(selectedProduct);
       product.set(
         "price",
         pricing === "NHIA"
           ? selectedProduct.nhiaPrice
           : pricing === "NNPC"
           ? selectedProduct.nnpcPrice
+          : pricing === "NYSC"
+          ? nyscPrice
           : selectedProduct.sellingPrice
       );
       // For NHIA HMO PRICE
@@ -165,6 +182,11 @@ export const updatePrescriptionPrice = (
         product.set(
           "hmoPrice",
           +product.get("fgPrice") * 0.9 * product.get("quantity")
+        );
+      } else if (pricing === "NYSC") {
+        product.set(
+          "hmoPrice",
+          +product.get("fgPrice") * 1 * product.get("quantity")
         );
       } else {
         if (product.has("hmoPrice")) {
@@ -199,13 +221,18 @@ export const updatePrescriptionQuantity = (
     const index = newProducts.findIndex((product) => product.get("id") === id);
 
     selectedProduct.set("quantity", e.target.value);
-    if (pricing === "NHIA" || pricing === "NYSC") {
+    if (pricing === "NHIA") {
       selectedProduct.set(
         "hmoPrice",
         +selectedProduct.get("fgPrice") * 0.9 * +e.target.value
       );
     }
-    // continue from here (NYSC FOR PRICING)
+    if (pricing === "NYSC") {
+      selectedProduct.set(
+        "hmoPrice",
+        +selectedProduct.get("fgPrice") * 1 * +e.target.value
+      );
+    }
     selectedProduct.set(
       "quantityPrice",
       Number((+e.target.value * selectedProduct.get("price")).toFixed(2))

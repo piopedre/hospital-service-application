@@ -4,7 +4,8 @@ import {
   initRequistion,
   addNotificationAction,
 } from "../../store";
-
+import notificationSound from "../../assets/tones/notification.mp3";
+import welcome from "../../assets/tones/welcome.mp3";
 export async function sendReq(token, data, reqFunction, ResponseError) {
   try {
     const response = await reqFunction(token, data);
@@ -16,6 +17,16 @@ export async function sendReq(token, data, reqFunction, ResponseError) {
     return { err };
   }
 }
+export function playWelcomeSound() {
+  const audio = new Audio(welcome);
+  audio.play();
+}
+
+export function playNotificationSound() {
+  const audio = new Audio(notificationSound);
+  audio.play();
+}
+
 export async function sendEditReq(token, reqFunction, id, data, ResponseError) {
   try {
     const response = await reqFunction(token, id, data);
@@ -132,6 +143,9 @@ export const storeNotificationMessenger = (
         message.unit === unitName &&
         clinicName === message.clinic
       ) {
+        setTimeout(() => {
+          playNotificationSound();
+        }, 300);
         // init Transfers
         if (window.location.pathname === "/pharma-app/transfer-products") {
           if (dispatch) {
@@ -148,6 +162,9 @@ export const storeNotificationMessenger = (
       }
     } else {
       if (message.type === "sending" && unitName === "STORE") {
+        setTimeout(() => {
+          playNotificationSound();
+        }, 300);
         // init Requistions
         if (window.location.pathname === "/pharma-app/issue-products") {
           if (dispatch) {
@@ -166,6 +183,9 @@ export const storeNotificationMessenger = (
             message.unitName === unitName &&
             message.locationName === locationName
           ) {
+            setTimeout(() => {
+              playNotificationSound();
+            }, 300);
             if (window.location.pathname === "/pharma-app/requistion") {
               if (dispatch) {
                 dispatch(

@@ -7,6 +7,7 @@ import {
 } from "../../../index";
 import { loginUser, logoutRequest } from "../../../../Utility/auth/auth";
 import { LOG_OUT } from "../../actionTypes/actionTypes";
+import { playWelcomeSound } from "../../../../Utility/general/general";
 
 export const authentication = (authStatus, text) => {
   return {
@@ -45,6 +46,10 @@ export const authenticating = (e, state) => {
     const loginResponse = await loginUser(JSON.stringify(form));
 
     if (loginResponse?.ok) {
+      setTimeout(() => {
+        playWelcomeSound();
+      }, 300);
+
       const { token, user } = await loginResponse.json();
 
       // User id
