@@ -79,7 +79,11 @@ const previewItem = React.memo((props) => {
           <h4>
             {props.location.name}, {props.unit.name} PHARMACY
           </h4>
-          <h5>{props.supplies ? props.supplier?.name : `DELETED SUPPLIER`}</h5>
+          {props.supplies ? (
+            <h5>
+              {props.supplies ? props.supplier?.name : `DELETED SUPPLIER`}
+            </h5>
+          ) : null}
         </div>
       </div>
       <div className={classes.salesInformation}>
