@@ -1,3 +1,4 @@
+import { playWelcomeSound } from "../../../../Utility/general/general";
 import {
   addInstitutionRequest,
   loginInstitutionRequest,
@@ -92,6 +93,9 @@ export const loginInstitution = (e, setState) => {
       );
       const authStatus = loginResponse?.ok;
       if (loginResponse?.ok) {
+        setTimeout(() => {
+          playWelcomeSound();
+        }, 300);
         const { name, token } = await loginResponse.json();
         sessionStorage.setItem("activeLink", JSON.stringify(0));
         sessionStorage.setItem("token", JSON.stringify(token));
