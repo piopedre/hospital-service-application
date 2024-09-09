@@ -109,8 +109,8 @@ export const validateRequistion = (requistion) => {
         dispatch(resetProductMessenger());
       }, 3000);
     } else {
-      const valid = requistion.every((requiste) =>
-        requiste.get("stockRequired")
+      const valid = requistion.every(
+        (requiste) => requiste.get("stockRequired") > 0
       );
       if (valid) {
         dispatch(requistionModal());

@@ -49,7 +49,9 @@ export const validateIssue = (state, setState) => {
     const isValid = requistionProducts.every((product) => product.storeProduct);
     if (isValid) {
       const isQtyValid = requistionProducts.every(
-        (product) => product.approvedQty <= product.storeProduct.quantity
+        (product) =>
+          product.approvedQty <= product.storeProduct.quantity &&
+          product.approvedQty >= 0
       );
       if (isQtyValid) {
         setState((prevState) => {
@@ -62,7 +64,7 @@ export const validateIssue = (state, setState) => {
       } else {
         dispatch(
           sendProductMessenger(
-            "stock required is greater than  store available quantity on an item",
+            "stock required is greater than  store available quantity on an item  or invalid quantity",
             true
           )
         );

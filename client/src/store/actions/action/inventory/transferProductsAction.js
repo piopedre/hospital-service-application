@@ -12,7 +12,9 @@ import { addNotificationRequest } from "../../../../Utility/users/usersChat";
 export const validateTransfer = (state, setState) => {
   return (dispatch) => {
     const products = [...state.productList];
-    const isQtyValid = products.every((product) => +product.get("quantity"));
+    const isQtyValid = products.every(
+      (product) => +product.get("quantity") > 0
+    );
     const isQtyAvailable = products.every(
       (product) => +product.get("onHandQuantity") >= +product.get("quantity")
     );

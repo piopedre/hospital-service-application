@@ -33,7 +33,8 @@ export const validatePrescription = (prescription) => {
         }
         if (+requiste.get("quantity")) {
           acc.valid = true;
-        } else {
+        }
+        if (requiste.get("quantity") <= 0) {
           acc.valid = false;
         }
         return acc;

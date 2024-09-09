@@ -13,7 +13,9 @@ import { initProductDatabase } from "../../action/general/generalAction";
 export const validateAddExpiries = (state, setState) => {
   return (dispatch) => {
     const products = [...state.productList];
-    const isQtyValid = products.every((product) => +product.get("quantity"));
+    const isQtyValid = products.every(
+      (product) => +product.get("quantity") > 0
+    );
     const isQtyAvailable = products.every(
       (product) => +product.get("onHandQuantity") >= +product.get("quantity")
     );

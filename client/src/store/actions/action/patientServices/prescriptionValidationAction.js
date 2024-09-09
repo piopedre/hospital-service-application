@@ -72,7 +72,12 @@ export const prescriptionValidation = (
         dispatch(resetProductMessenger());
       }, 2000);
     } else if (!valid) {
-      dispatch(sendProductMessenger("A product quantity is  0 (ZER0) ", true));
+      dispatch(
+        sendProductMessenger(
+          "A product quantity is  0 (ZER0) or less than zero ",
+          true
+        )
+      );
       setTimeout(() => {
         dispatch(resetProductMessenger());
       }, 2000);

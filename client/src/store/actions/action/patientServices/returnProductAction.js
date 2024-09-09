@@ -10,7 +10,9 @@ import { addProductQuantity } from "../../../../Utility/product/product";
 export const validateProductReturn = (state, setState) => {
   return (dispatch) => {
     const products = [...state.productList];
-    const isQtyValid = products.every((product) => +product.get("quantity"));
+    const isQtyValid = products.every(
+      (product) => +product.get("quantity") > 0
+    );
 
     if (isQtyValid) {
       setState((prevState) => {

@@ -14,6 +14,7 @@ const prescriptionItems = React.memo((props) => {
               <input
                 className={classes.prescriptionInput}
                 type='number'
+                min={0}
                 value={product.get("quantity")}
                 autoFocus={true}
                 style={{
