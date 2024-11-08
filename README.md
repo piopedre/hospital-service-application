@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a service application built using JavaScript technologies. It utilizes the React framework for the frontend, MongoDB for database management, and Express.js for server-side operations. The application aims to provide [brief description of what the application does].
+This project is a service application built using JavaScript technologies. It utilizes the React framework for the frontend, MongoDB for database management, and Express.js for server-side operations. The application aims to provide enable health professionals render patient services efficiently and effectively.
 
 
 
